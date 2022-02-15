@@ -1,6 +1,15 @@
+body {
+  font-family: "Roboto";
+  color: #212121;
+  font-style: normal;
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
 }
+/* <!-- Header section --> */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -13,14 +22,224 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.logo {
+
+.logo-up {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  background-color: #ffffff;
+  color: #2196f3;
+  text-decoration: none;
 }
-.site-nav {
+.logo-halph {
+  color: #000000;
+  text-decoration: none;
 }
-.contacts {
+
+.site-nav:hover :focus {
+  color: #2196f3;
+  text-decoration: none;
 }
-/* .project-btn {
-  list-style: none;
-} */
+.nav-link {
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  left: 552px;
+  top: 32px;
+}
+
+.post-links {
+  font-size: 14px;
+  line-height: 16px;
+  color: #757575;
+  text-decoration: none;
+}
+.post-links:hover :focus {
+  color: #2196f3;
+}
+
+.mobile-links {
+  font-size: 14px;
+  line-height: 16px;
+  color: #757575;
+  text-decoration: none;
+}
+.mobile-links:hover :focus {
+  color: #2196f3;
+}
+
+/* Main section */
+.title {
+  color: #ffffff;
+  background-color: #2f303a;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.content-btn {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.content {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.text-content {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.work-conteiner {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.work-list {
+}
+.work-content {
+}
+.work-cards {
+}
+
+.team-conteiner {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.team-list {
+}
+.team-items {
+}
+.items-cards {
+  background: url(4853.jpg);
+  border-radius: 0px;
+}
+.team-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.position-team {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* Footer section */
+.logo-down {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  background-color: #ffffff;
+  color: #2196f3;
+  text-decoration: none;
+}
+.halph-logo {
+  color: #ffffff;
+  background-color: #2f303a;
+  text-decoration: none;
+}
+
+.maps-links {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: #2f303a;
+  text-decoration: none;
+}
+
+.mail-down {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+}
+.phone-down {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+}
+.project-btn {
+  font-family: "Roboto";
+  color: #212121;
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+.project-btn:hover :focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
 .project-cards {
+}
+.contacts-down {
+  font-style: normal;
 }
