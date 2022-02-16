@@ -59,12 +59,6 @@ ul {
   color: #757575;
   text-decoration: none;
 }
-.post-links:hover :focus {
-  color: #2196f3;
-  background-color: #ffffff;
-  text-decoration: none;
-}
-
 .mobile-links {
   font-size: 14px;
   line-height: 1.14;
@@ -72,7 +66,7 @@ ul {
   color: #757575;
   text-decoration: none;
 }
-.mobile-links:hover :focus {
+.contacts:hover :focus {
   color: #2196f3;
   background-color: #ffffff;
   text-decoration: none;
