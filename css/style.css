@@ -228,8 +228,8 @@ ul {
   text-decoration: none;
 }
 
-.contacts-down {
-  font-style: normal;
+.contacts-down:hover :focus {
+  color: #2196f3;
 }
 .maps-links {
   font-family: "Roboto";
