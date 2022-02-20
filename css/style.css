@@ -1,15 +1,32 @@
-body {
-  font-family: "Roboto";
-  color: #212121;
-  font-style: normal;
-  text-decoration: none;
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --main-txt-color: #757575;
+  --secondary-txt-color: #212121;
+  --accent-color: #2196f3;
+  --main-white-color: #ffffff;
+  --logo-color-black: #000000;
+  --secondary-bg-color: #2f303a;
+  --btn-bg-color: #f5f4fa;
+  --rgba-white-color: rgba(255, 255, 255, 0.6);
 }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: var(--main-font);
+  background-color: var(--main-white-color);
+  color: var(--main-txt-color);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* <!-- Header section --> */
 
 ul {
   list-style: none;
 }
-/* <!-- Header section --> */
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -24,71 +41,74 @@ ul {
 }
 
 .logo-up {
-  font-family: "Raleway";
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  background-color: #ffffff;
-  color: #2196f3;
+  background-color: var(--main-white-color);
+  color: var(--accent-color);
   text-decoration: none;
 }
 .logo-halph {
-  color: #000000;
+  color: var(--logo-color-black);
   text-decoration: none;
 }
+.site-nav .nav-link.current {
+  color: var(--accent-color);
+}
 
-.site-nav:hover :focus {
-  color: #2196f3;
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
   text-decoration: none;
 }
 .nav-link {
-  color: #212121;
-  font-size: 14px;
+  color: var(--secondary-txt-color);
   line-height: 1.14;
   font-weight: 500;
   text-decoration: none;
   letter-spacing: 0.02em;
-  left: 552px;
-  top: 32px;
 }
 
-.post-links {
-  font-size: 14px;
-  line-height: 1.14;
-  font-weight: 500;
-  color: #757575;
-  text-decoration: none;
-}
+.post-links,
 .mobile-links {
-  font-size: 14px;
+  color: var(--main-txt-color);
   line-height: 1.14;
   font-weight: 500;
-  color: #757575;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.post-links:hover,
+.post-links:focus {
+  color: var(--accent-color);
+  background-color: var(--main-white-color);
   text-decoration: none;
 }
-.contacts:hover :focus {
-  color: #2196f3;
-  background-color: #ffffff;
+
+.mobile-links:hover,
+.mobile-links:focus {
+  color: var(--accent-color);
   text-decoration: none;
 }
 
 /* Main section */
+.hero {
+  background-color: var(--secondary-bg-color);
+}
 .title {
-  color: #ffffff;
-  background-color: #2f303a;
-  font-family: "Roboto";
-  font-style: normal;
+  color: var(--main-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.37;
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .order-btn {
-  font-family: "Roboto";
-  font-weight: 500;
+  font-family: inherit;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   display: flex;
@@ -96,171 +116,125 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   padding: 10px 32px;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
   box-shadow: none;
   border: 0;
   border-radius: 4px;
 }
 
 .content {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
-}
-.text-content {
-  font-family: "Roboto";
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-txt-color);
 }
 
-.work-conteiner {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
+.work-conteiner,
 .team-conteiner {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--secondary-txt-color);
+}
+
+.about-team {
+  background-color: var(--btn-bg-color);
 }
 
 .items-cards {
   border-radius: 0px;
 }
 .team-name {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--secondary-txt-color);
 }
 .position-team {
-  font-family: "Roboto";
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #757575;
 }
 
-.project-btn {
-  font-family: "Roboto";
-  color: #212121;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  border-radius: 4px;
-  padding: 6px 22px;
-}
-.project-btn:hover :focus {
-  color: #ffffff;
-  background-color: #2196f3;
+.btn-shows:hover,
+.btn-shows:focus {
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .btn-shows {
+  font-family: inherit;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.62;
   font-weight: 500;
+  letter-spacing: 0.03em;
   border: 0;
   border-radius: 4px;
-  background-color: #f5f4fa;
-  color: #212121;
+  background-color: var(--btn-bg-color);
+  color: var(--secondary-txt-color);
   padding: 6px 22px;
   box-shadow: rgba(0, 0, 0, 0.25);
 }
 
 .project-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--secondary-txt-color);
 }
 .title-text {
-  font-family: "Roboto";
   font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.03em;
-  color: #757575;
+  line-height: 1.87;
 }
 
 /* Footer section */
+.footer-box {
+  background-color: var(--secondary-bg-color);
+}
 .logo-down {
-  font-family: "Raleway";
+  font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
   line-height: 1.2;
-  background-color: #ffffff;
-  color: #2196f3;
+  font-size: 26px;
+  color: var(--accent-color);
   text-decoration: none;
 }
 .halph-logo {
-  color: #ffffff;
-  background-color: #2f303a;
+  color: var(--main-white-color);
   text-decoration: none;
 }
 .logo-halph {
-  color: #000000;
+  color: var(--logo-color-black);
   text-decoration: none;
 }
 
-.contacts-down:hover :focus {
-  color: #2196f3;
-}
 .maps-links {
-  font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  background-color: #2f303a;
+  color: var(--main-white-color);
   text-decoration: none;
 }
-.mail-down {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  background-color: #2f303a;
-  text-decoration: none;
+.maps-links:hover,
+.maps-links:focus {
+  color: var(--accent-color);
 }
+
+.mail-down,
 .phone-down {
-  font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  background-color: #2f303a;
+  color: var(--rgba-white-color);
   text-decoration: none;
+}
+
+.mail-down:hover,
+.mail-down:focus {
+  color: var(--accent-color);
+}
+
+.phone-down:hover,
+.phone-down:focus {
+  color: var(--accent-color);
 }
