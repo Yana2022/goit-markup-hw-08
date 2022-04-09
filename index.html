@@ -10,49 +10,61 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
   rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+  integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-  <!-- Header section -->
-  <header>
+  <!-- Header section --> 
+  <div class="container-nav additions">
+
+   <header class="section-up container">
     <a class="logo-up" href="./index.html">Web<span class="logo-halph">Studio</span></a>
 
     <nav>
-      <ul class="site-nav">
-        <li>
+      <ul class="site-nav additions">
+        <li class="nav-item">
           <a class="nav-link current" href="./index.html">Студия</a>
         </li>
-        <li>
+        <li class="nav-item">
           <a class="nav-link" href="./portfolio.html">Портфолио</a>
         </li>
-        <li>
+        <li class="nav-item">
           <a class="nav-link" href="./index.html">Контакты</a>
         </li>
       </ul>
     </nav>
 
-    <ul class="contacts">
-      <li>
+
+    <ul class="contacts additions">
+      <li class="nav-item">
         <a class="post-links" href="mailto:info@devstudio.com">info@devstudio.com</a>
       </li>
-      <li class="contacts-mobile">
+      <li class="nav-item">
         <a class="mobile-links" href="tel:+380961111111">+38 096 111 11 11</a>
       </li>
     </ul>
-  </header>
 
+  </header>
+</div>
   <!-- Main section -->
+
+
   <main>
+
     <section class="hero">
       <h1 class="title">Эффективные решения для вашего бизнеса</h1>
       <button class="order-btn" type="button">Заказать услугу</button>
     </section>
 
-    <section>
+    <section class="container-content">
       <h2 class="visually-hidden">Особенности</h2>
-      <ul>
-        <li>
+
+<div class="container section">
+      <ul class="content-list">
+        <li class="list-description">
           <h3 class="content">Внимание к деталям</h3>
           <p class="text-content">
             Идейные соображения, а также начало повседневной работы по
@@ -80,12 +92,15 @@
             плановых заданий.
           </p>
         </li>
-      </ul>
+      </ul> 
+</div>
     </section>
 
-    <section >
-      <h2 class="work-conteiner">Чем мы занимаемся</h2>
-      <ul class="work-list">
+    <section class="container-working">
+
+      <h2 class="work-container">Чем мы занимаемся</h2>
+      <div class="container">
+      <ul class="work-list additions">
         <li class="work-content">
           <img class="work-cards" src="./images/box1.jpg" alt="Руки на клавиатуре" width="370" height="294" />
         </li>
@@ -98,8 +113,11 @@
       </ul>
     </section>
 
+
     <section class="about-team">
-      <h2 class="team-conteiner">Наша команда</h2>
+<div class="container">
+
+      <h2 class="team-container">Наша команда</h2>
       <ul class="team-list">
         <li class="team-items">
           <img class="items-cards" src="./images/team-photo1.jpg" alt="Фото сотрудника компании" width="270"
@@ -126,16 +144,19 @@
           <p class="position-team">UI Designer</p>
         </li>
       </ul>
+
+</div>
     </section>
+
   </main>
 
   <!-- Footer section -->
   <footer class="footer-box">
-
+<div class="container">
     <a class="logo-down" href="./index.html">Web<span class="halph-logo">Studio</span></a>
 
     <address>
-      <ul class="contacts-down">
+      <ul class="contacts-down additions">
         <li class="down-maps">
           <a class="maps-links" href="https://goo.gl/maps/cZJvyfr7hVmBAETw7">г. Киев, пр-т Леси Украинки, 26</a>
         </li>
@@ -147,7 +168,9 @@
         </li>
       </ul>
     </address>
-  </footer>
+  </div>
+  </footer> 
+
 </body>
 
 </html>

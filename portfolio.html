@@ -10,43 +10,51 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
   rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+  integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-  <!-- Header section -->
-  <header>
+  <!-- Header section -->   
+   <div class="container-nav additions">
+
+   <header class="section-up container">
     <a class="logo-up" href="./index.html">Web<span class="logo-halph">Studio</span></a>
+
     <nav>
-      <ul class="site-nav">
-        <li>
+      <ul class="site-nav additions">
+        <li class="nav-item">
           <a class="nav-link" href="./index.html">Студия</a>
         </li>
-        <li>
+        <li class="nav-item">
           <a class="nav-link current" href="./portfolio.html">Портфолио</a>
         </li>
-        <li>
+        <li class="nav-item">
           <a class="nav-link" href="./index.html">Контакты</a>
         </li>
       </ul>
     </nav>
 
-    <ul class="contacts">
-      <li class="contacts-post">
+    <ul class="contacts additions">
+      <li class="nav-item">
         <a class="post-links" href="mailto:info@devstudio.com">info@devstudio.com</a>
       </li>
-      <li class="contacts-mobile">
+      <li class="nav-item">
         <a class="mobile-links" href="tel:+380961111111">+38 096 111 11 11</a>
       </li>
     </ul>
   </header>
-
+   </div>
   <!-- Main section -->
   <main>
-    <section>
+
+    <section class="main-porfolio"> 
+       <div class="container section">
       <h1 class="visually-hidden">Продукты</h1>
       <ul class="project-btn">
-        <li>
+        <li class="btn-item">
           <button class="btn-shows" type="button">Все</button>
         </li>
         <li>
@@ -63,60 +71,62 @@
         </li>
       </ul>
 
-      <ul class="conteiner-project">
-        <li>
+      <ul class="container-project container">
+        <li class="project-list">
           <img class="project-cards" src="./images/project1.jpg" alt="Фото ноутбука с фотокарточками на дисплее" width="370" height="294" />
           <h2 class="project-title">Технокряк</h2>
           <p class="title-text">Веб-сайт</p>
         </li>
-        <li>
+        <li class="project-list">
           <img class="project-cards" src="./images/project2.jpg" alt="Фото баскетболистов с мячом" width="370" height="294" />
           <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
           <p class="title-text">Дизайн</p>
         </li>
-        <li>
+        <li class="project-list">
           <img class="project-cards" src="./images/project3.jpg" alt="Логотип ресторана" width="370" height="294" />
           <h2 class="project-title">Ресторан Seafood</h2>
           <p class="title-text">Приложение</p>
         </li>
-        <li>
+        <li class="project-list">
           <img class="project-cards" src="./images/project4.jpg" alt="Черные наушники" width="370" height="294" />
           <h2 class="project-title">Проект Prime</h2>
           <p class="title-text">Маркетинг</p>
         </li>
-        <li>
+        <li class="project-list">
           <img class="project-cards" src="./images/project5.jpg" alt="Две коробки" width="370" height="294" />
           <h2 class="project-title">Проект Boxes</h2>
           <p class="title-text">Приложение</p>
         </li>
-        <li>
+        <li class="project-list">
           <img class="project-cards" src="./images/project6.jpg" alt="Монитор компьютора" width="370" height="294" />
           <h2 class="project-title">Inspiration has no Borders</h2>
           <p class="title-text">Веб-сайт</p>
         </li>
-        <li>
+        <li class="project-list">
           <img class="project-cards" src="./images/project7.jpg" alt="Открытый журнал" width="370" height="294" />
           <h2 class="project-title">Издание Limited Edition</h2>
           <p class="title-text">Дизайн</p>
         </li>
-        <li>
+        <li class="project-list">
           <img class="project-cards" src="./images/project8.jpg" alt="Бирка на веревке" width="370" height="294" />
           <h2 class="project-title">Проект LAB</h2>
           <p class="title-text">Маркетинг</p>
         </li>
-        <li>
+        <li class="project-list">
           <img class="project-cards" src="./images/project9.jpg" alt="Руки на клавиатуре ноутбука" width="370"
             height="294" />
           <h2 class="project-title">Growing Business</h2>
           <p class="title-text">Приложение</p>
         </li>
       </ul>
+    </div>
     </section>
+ 
   </main>
 
   <!-- Footer section -->
   <footer class="footer-box">
-
+<div class="container">
     <a class="logo-down" href="./index.html">Web<span class="halph-logo">Studio</span></a>
 
     <address>
@@ -131,8 +141,10 @@
           <a class="phone-down" href="tel:+380991111111">+38 099 111 11 11</a>
         </li>
       </ul>
-    </address>
+    </address> 
+   </div>
   </footer>
+
 </body>
 
 </html>
