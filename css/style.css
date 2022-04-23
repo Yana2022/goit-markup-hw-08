@@ -239,15 +239,15 @@ ul {
   display: block;
   max-width: 100%;
   height: auto;
-  font-size:0;
-  line-height:0;
+  border: 0;
+
 }
 .work-content {
   font-size: 0px;
 }
 .name-position {
   padding-top: 30px;
-  padding-bottom: 30px; 
+  padding-bottom: 30px;
 }
 .position-team {
   color: var(--main-txt-color);
@@ -259,8 +259,6 @@ ul {
 .about-team {
   background-color: var(--btn-bg-color);
 }
-
-  /* border-radius: 0px; */
 
 .team-name {
   font-weight: 500;
