@@ -387,7 +387,7 @@ ul {
   color: var(--rgba-white-color);
   text-decoration: none;
 }
-.maps-links {
+.maps {
   color: var(--main-white-color);
 }
 .contacts-links .links-down:hover,
