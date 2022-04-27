@@ -6,8 +6,10 @@
   --accent-color: #2196f3;
   --main-white-color: #ffffff;
   --logo-color-black: #000000;
-  --secondary-bg-color: #2f303a;
+  --secondary-bg-color: #2F303A;
+  --bg-color-hero: rgba(47, 48, 58, 0.4);
   --btn-bg-color: #f5f4fa;
+  --btn-color-hover: #188CE8;
   --bg-line-color: #ececec;
   --bg-frame-color: #eeeeee;
   --rgba-white-color: rgba(255, 255, 255, 0.6);
@@ -145,6 +147,17 @@ ul {
   padding-bottom: 200px;
   padding-top: 200px;
 }
+.overlay {
+  min-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, var(--bg-color-hero), var(--bg-color-hero)), url(../images/img-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
 .title {
   color: var(--main-white-color);
   font-weight: 900;
@@ -173,7 +186,10 @@ ul {
   cursor: pointer;
   margin: auto;
 }
-
+.order-btn:hover,
+.order-btn:focus {
+  background-color: #188CE8;
+}
 .content-list {
   display: flex;
 }
@@ -185,7 +201,29 @@ ul {
 .list-description:not(:last-child){
   margin-right: 30px;
 }
-
+.list-description::before {
+  display: block;
+  content: "";
+  height: 120px;
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: var(--btn-bg-color);
+  background-size: 70px;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+.list-description:nth-child(1)::before {
+  background-image: url(../images/icons.svg/antenna.svg);
+}
+.list-description:nth-child(2)::before {
+    background-image: url(../images/icons.svg/clock.svg);
+}
+.list-description:nth-child(3)::before {
+  background-image: url(../images/icons.svg/diagram.svg);
+}
+.list-description:nth-child(4)::before {
+  background-image: url(../images/icons.svg/astronaut.svg);
+}
 .content {
   font-size: 14px;
   font-weight: 700;
@@ -194,12 +232,12 @@ ul {
   color: var(--secondary-txt-color);
   margin-top: 0px;
   margin-bottom: 10px;
-  width: 270px;
+  /* width: 270px; */
 }
 
 .text-content {
   flex-wrap: wrap;
-  width: 270px;
+  /* width: 270px; */
 }
 
 .work-container,
@@ -344,6 +382,14 @@ ul {
 .title-text {
   font-size: 16px;
   line-height: 1.87;
+}
+
+.regular-customers {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--secondary-txt-color);
 }
 
 /* Footer section */
