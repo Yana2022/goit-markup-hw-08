@@ -52,12 +52,9 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-
 .flex-class {
   display: flex;
 }
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -72,10 +69,15 @@ ul {
 .cancel-padding {
   padding-top: 0px;
 }
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container-nav {
   border-bottom: 1px solid var(--bg-line-color);
 }
-
 .logo-up {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -221,12 +223,6 @@ ul {
   margin-left: 30px;
 }
 
-.img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-
-}
 .work-content {
   font-size: 0px;
 }
