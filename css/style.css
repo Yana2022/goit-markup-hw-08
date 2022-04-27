@@ -208,7 +208,7 @@ ul {
   width: 100%;
   margin-bottom: 30px;
   background-color: var(--btn-bg-color);
-  background-size: 70px;
+  background-size: 70px 70px;
   background-position: center;
   background-repeat: no-repeat; 
 }
@@ -418,7 +418,9 @@ ul {
   color: var(--logo-color-black);
   text-decoration: none;
 }
-
+.contacts-down {
+  display: inline-block;
+}
 .contacts-down .contacts-links:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -435,4 +437,14 @@ ul {
 .contacts-links .links-down:hover,
 .contacts-links .links-down:focus {
   color: var(--accent-color);
+}
+.social-networks {
+  display: flex;
+  margin-left: 70px;
+}
+.join-title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.17;
+      color: var(--main-white-color);
 }
