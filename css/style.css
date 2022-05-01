@@ -39,7 +39,6 @@ h1, h2, h3, h4, p {
 .header {
   border-bottom: 1px solid var(--bg-line-color);
 }
-
 ul {
   margin: 0px;
   padding: 0px;
@@ -79,7 +78,6 @@ ul {
 .cancel-padding {
   padding-top: 0px;
 }
-
 .container-nav {
   border-bottom: 1px solid var(--bg-line-color);
 }
@@ -199,7 +197,6 @@ background-position: center;
 .content-list {
   display: flex;
 }
-
 .list-description {
   flex-wrap: wrap;
   width: calc((100% - 90px) / 4);
@@ -207,7 +204,6 @@ background-position: center;
 .list-description:not(:last-child){
   margin-right: 30px;
 }
-
 .futures {
   display: block;
   height: 120px;
@@ -220,33 +216,6 @@ background-position: center;
   height: 70px;
   width: 70px;
 }
-
-
-/* }
-.list-description::before {
-  display: block;
-  content: "";
-  height: 120px;
-  width: 100%;
-  margin-bottom: 30px;
-  background-color: var(--btn-bg-color);
-  background-size: 70px 70px;
-  background-position: center;
-  background-repeat: no-repeat; 
-}
-.list-description:nth-child(1)::before {
-  background-image: url(../images/icons.svg/antenna.svg);
-}
-.list-description:nth-child(2)::before {
-  background-image: url(../images/icons.svg/clock.svg);
-}
-.list-description:nth-child(3)::before {
-  background-image: url(../images/icons.svg/diagram.svg);
-}
-.list-description:nth-child(4)::before {
-  background-image: url(../images/icons.svg/astronaut.svg);
-} */
-
 .content {
   font-size: 14px;
   font-weight: 700;
@@ -257,12 +226,10 @@ background-position: center;
   margin-bottom: 10px;
   /* width: 270px; */
 }
-
 .text-content {
   flex-wrap: wrap;
   /* width: 270px; */
 }
-
 .work-container,
 .team-container {
   font-weight: 700;
@@ -271,7 +238,6 @@ background-position: center;
   text-align: center;
   color: var(--secondary-txt-color);
 }
-
 .work-container {
   margin-bottom: 50px;
 }
@@ -279,11 +245,9 @@ background-position: center;
   display: flex;
   flex-wrap: wrap;
 }
-
 .work-list .work-content:not(:first-child) {
   margin-left: 30px;
 }
-
 .work-content {
   font-size: 0px;
 }
@@ -297,6 +261,40 @@ background-position: center;
   line-height: 1.19;
   text-align: center;
   margin: 0px;
+  margin-bottom: 16px;
+}
+
+.team-socials {
+justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--main-white-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.team-socials .social-item:not(:first-child) {
+  margin-left: 10px;
+}
+.social-link:hover {
+  background-color: var(--accent-color);
+}
+.social-link:hover .social-icon {
+  fill: var(--main-white-color);
+  
+}
+.social-icon {
+  fill: #AFB1B8;
+}
+.social-icon:hover,
+.social-icon:focus {
+  fill: var(--main-white-color);
 }
 
 .team-name {
@@ -318,7 +316,6 @@ background-position: center;
 .team-container {
   margin-bottom: 50px;
 }
-
 .team-items {
   background: var(--main-white-color);
   box-shadow: var(--box-shadow-sec-color);
@@ -329,20 +326,17 @@ background-position: center;
 .team-list .team-items:nth-child(4n) {
   margin-right: 0;
 }
-
 .project-btn {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-
 .btn-shows:hover,
 .btn-shows:focus {
   color: var(--main-white-color);
   background-color: var(--accent-color);
   box-shadow: var(--box-shadow-color);
 }
-
 .btn-shows {
   display: inline-block;
   text-align: center;
@@ -363,12 +357,10 @@ background-position: center;
 .project-btn .btn-item:not(:last-child) {
   margin-right: 8px;
 }
-
 .container-project {
   display: flex;
   flex-wrap: wrap;
 }
-
 .project-list {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
@@ -387,16 +379,13 @@ background-position: center;
 .project-list:hover,
 .project-list:focus {
   box-shadow: var(--box-shadow-carts);
-
 }
-
 .project-detals {
   padding: 20px 24px;
   border-left: 1px solid var(--bg-frame-color);
   border-right: 1px solid var(--bg-frame-color);
   border-bottom: 1px solid var(--bg-frame-color);
 }
-
 .project-title {
   font-weight: 700;
   font-size: 18px;
@@ -405,12 +394,10 @@ background-position: center;
   color: var(--secondary-txt-color);
   margin-bottom: 4px;
 }
-
 .title-text {
   font-size: 16px;
   line-height: 1.87;
 }
-
 .regular-clients {
   font-weight: 700;
   font-size: 36px;
@@ -420,24 +407,20 @@ background-position: center;
   margin: 0px;
   margin-bottom: 50px;
 }
-
 .clients-list {
   display: flex;
   width: calc((100% - 150px) / 6);
 }
-
 .btn-svg {
   cursor: pointer;
   width: 106px;
   height: 60px;
   fill: #afb1b8;
 }
-
 .btn-svg:hover,
 .btn-svg:focus {
   fill: #2196F3;
 }
-
 .client-btn {
   display: block;
   padding: 16px 32px;
@@ -447,16 +430,13 @@ background-position: center;
   border: 1px solid rgba(175, 177, 184, 1);
   background-color: #fff;
 }
-
 .clients-list .client-item:not(:first-child) {
   margin-left: 30px;
 }
-
 .client-btn:hover,
 .client-btn:focus {
   border: 1px solid rgba(33, 150, 243, 1);
   background-color: #fff;
-
 }
 
 /* Footer section */
@@ -505,26 +485,51 @@ background-position: center;
 .contacts-links .links-down:focus {
   color: var(--accent-color);
 }
+
 .social-networks {
   display: flex;
-  /* width: 206px; */
+  padding: 75px 97px;
+  width: 206px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
 }
 .networks-list {
   display: flex;
   margin-left: 70px;
 }
 .join-title {
-  /* display: inline-block; */
-  /* text-align: center; */
-  display: flex;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
   color: var(--main-white-color);
   margin-bottom: 20px;
+  padding-bottom: 0px;
 }
 .networks-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  background-color: #44454E;
+  border-radius: 50%;
 }
-.networks-item {
-  /* text-align: center; */
+.networks-list .networks-item:not(:first-child) {
+  margin-left: 10px;
+}
+.networks-link:hover,
+.networks-link:focus {
+  background-color: var(--accent-color);
+}
+
+.link-btn {
+  margin: 0;
+  fill: var(--main-white-color);
 }
