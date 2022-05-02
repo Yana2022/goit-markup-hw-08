@@ -15,6 +15,7 @@
   --bg-frame-color: #eeeeee;
   --icon-color: #afb1b8;
   --icon-color-bg: #44454E;
+  --order-btn-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   --rgba-white-color: rgba(255, 255, 255, 0.6);
   --box-shadow-color: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   --box-shadow-sec-color: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
@@ -186,7 +187,7 @@ ul {
   padding: 10px 32px;
   color: var(--main-white-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--order-btn-shadow);
   border: 0;
   border-radius: 4px;
   cursor: pointer;
@@ -446,7 +447,7 @@ justify-content: center;
 }
 
 .logo-down {
-  /* display: inline-block; */
+  display: inline-block; 
   font-family: var(--secondary-font);
   font-weight: 700;
   line-height: 1.2;
@@ -464,9 +465,7 @@ justify-content: center;
   color: var(--logo-color-black);
   text-decoration: none;
 }
-.contacts-down {
-  display: inline-block;
-}
+
 .contacts-down .contacts-links:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -485,32 +484,16 @@ justify-content: center;
   color: var(--accent-color);
 }
 
-.footer-block {
-  display: flex;
-  justify-content: center;
+.networks-block {
+  margin-right: auto;
   align-items: center;
+  margin-top: 12px;
 }
-.contacts-links {
-  display: inline-block;
-}
-.logo-down {
-  display: block;
-}
-/* .social-networks {
-  display: flex;
-  width: 206px;
-  height: 80px;
-  margin: 0;
-  padding: 0;
-} */
 .networks-list {
   display: flex;
 }
 .join-title {
-  display: inline-flex;
-  /* padding: 75px 97px; */
   width: 100%;
-  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
@@ -518,6 +501,11 @@ justify-content: center;
   margin-bottom: 20px;
   padding-bottom: 0px;
 }
+.contacts-block {
+  display: block;
+  margin-right: 70px;
+}
+
 .networks-link {
   display: flex;
   justify-content: center;
@@ -531,9 +519,7 @@ justify-content: center;
 .networks-list .networks-item:not(:first-child) {
   margin-left: 10px;
 }
-.networks-list {
-  margin-right: 70px;
-}
+
 .networks-link:hover,
 .networks-link:focus {
   background-color: var(--accent-color);
