@@ -410,16 +410,14 @@ justify-content: center;
 }
 .clients-list {
   display: flex;
-  align-items: center;
-  width: calc((100% - 150px) / 6);
+  flex-wrap: wrap;
 }
 .btn-svg {
   cursor: pointer;
   fill: var(--icon-color);
 }
 .client-item {
-  display: flex;
-  max-width: 170px;
+  width: calc((100% - 150px) / 6);
 }
 
 .link-client {
