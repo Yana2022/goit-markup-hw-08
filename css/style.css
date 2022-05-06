@@ -449,17 +449,17 @@ justify-content: center;
 .clients-list .client-item:not(:first-child) {
   margin-left: 30px;
 }
-.client-item:hover,
-.client-item:focus {
+.link-client:hover,
+.link-client:focus {
   border: 1px solid var(--accent-color);
   background-color: var(--main-white-color);
-  color: var(--accent-color);
-}
-.client-item:hover .btn-svg,
-.client-item:focus .btn-svg {
   fill: var(--accent-color);
 }
 
+.link-client:hover .btn-svg,
+.link-client:focus .btn-svg {
+  fill: var(--accent-color);
+}
 /* Footer section */
 .footer-box {
   background-color: var(--secondary-bg-color);
