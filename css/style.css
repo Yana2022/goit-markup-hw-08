@@ -438,7 +438,6 @@ justify-content: center;
   background-color: var(--main-white-color);
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 
   width: calc((100% - 150px) / 6);
 }
