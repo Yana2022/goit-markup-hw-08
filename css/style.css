@@ -263,8 +263,8 @@ ul {
   position: relative;
 }
 .work-text {
-  /* font-weight: 700;
-  letter-spacing: 0.03em; */
+  font-weight: 700;
+  letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.17;
 
@@ -441,8 +441,9 @@ justify-content: center;
   letter-spacing: 3%;
   padding: 63px 24px;
 }
-.project-list:hover .blue-box {
-  opacity: 0.9;  
+.project-list:hover .blue-box,
+.project-list:focus .blue-box {
+  opacity: 0.9;
   color: var(--main-white-color);
   background-color: rgba(33, 150, 243, 0.9);
 }
