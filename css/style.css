@@ -459,7 +459,8 @@ justify-content: center;
 .blue-box {
   display: block;
   position: absolute;
-  opacity: 1;
+  /* opacity: 1; */
+  opacity: 0;
   width: 100%;
   height: 100%;
   bottom: 0;
@@ -475,7 +476,7 @@ justify-content: center;
   line-height: 1.56;
   letter-spacing: 3%;
   padding: 63px 24px;
-  color: #ffffff;
+  color: var(--main-white-color);
   background-color: rgba(33, 150, 243, 0.9);
   /* opacity: 1; */
 }
