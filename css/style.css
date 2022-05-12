@@ -413,8 +413,7 @@ justify-content: center;
   padding: 6px 22px;
   min-width: 73px;
 
-  transition: color 250ms var(--timing-function),
-  background-color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
 }
 .project-btn .btn-item:not(:last-child) {
   margin-right: 8px;
@@ -445,27 +444,29 @@ justify-content: center;
   color: var(--main-txt-color);
   text-decoration: none;
 }
+
 .link-projects:hover,
 .link-projects:focus {
   box-shadow: var(--box-shadow-carts);
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .project-some {
   display: block;
   position: relative;
+  overflow: hidden;
 }
 .blue-box {
+  display: block;
   position: absolute;
-  opacity: 0;
+  opacity: 1;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateY(100%);
+  transition: transform 250ms var(--timing-function);
 
-  transition: color 250ms var(--timing-function),
-  background-color 250ms var(--timing-function);
-  /* transform: translate(-50% -50%); */
-  /* transition: 500ms opacity linear; */
 }
 .hover-text {
   display: block;
@@ -474,12 +475,15 @@ justify-content: center;
   line-height: 1.56;
   letter-spacing: 3%;
   padding: 63px 24px;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  /* opacity: 1; */
 }
 .project-list:hover .blue-box,
 .project-list:focus .blue-box {
   opacity: 0.9;
-  color: var(--main-white-color);
-  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform 250ms var(--timing-function);
+  transform: translateY(0%);
 }
 
 .project-detals {
