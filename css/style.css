@@ -22,7 +22,8 @@
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   --box-shadow-carts: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --transmition-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --transmition-timing: 250ms;
 }
 
 body {
@@ -142,7 +143,7 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  transition: color 250ms var(--timing-function);
+  transition: color var(--transmition-timing) var(--transmition-function);
   position: relative;
 }
 .border::after {
@@ -156,7 +157,7 @@ ul {
   background-color: var(--accent-color);
   border-radius: 2px;
   opacity: 0;
-  transition: opacity 250ms var(--timing-function);
+  transition: opacity var(--transmition-timing) var(--transmition-function);
 }
 .border:hover::after,
 .border:focus::after {
@@ -225,44 +226,59 @@ ul {
   max-width: 300px;
   min-height: 50px;
 
-  transition: color 250ms var(--timing-function);
+  transition: color var(--transmition-timing) var(--transmition-function);
 }
 .order-btn:hover,
 .order-btn:focus {
   background-color: var(--btn-color-hover);
 }
 
-/* модалка */
+/* модальное окно */
+
 .backdrop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 10;
 
   background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity var(--transmition-timing) var(--transmition-function),
+    visibility var(--transmition-timing) var(--transmition-function);
 }
-.backdrop .is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 581px;
-  width: 528px;
 
   transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+
   background-color: var(--main-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform var(--transmition-timing) var(--transmition-function),
+    opacity var(--transmition-timing) var(--transmition-function);
 }
 .close-button {
   position: absolute;
   top: 8px;
   right: 8px;
-  border: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
 
   background-color: var(--main-white-color);
+  cursor: pointer;
 }
 
 .icon-close {
@@ -380,8 +396,8 @@ ul {
   width: 44px;
   height: 44px;
 
-  transition: color 250ms var(--timing-function),
-    background-color 250ms var(--timing-function);
+  transition: color var(--transmition-timing) var(--transmition-function),
+    background-color var(--transmition-timing) var(--transmition-function);
 }
 .team-socials .social-item:not(:first-child) {
   margin-left: 10px;
@@ -459,7 +475,7 @@ ul {
   padding: 6px 22px;
   min-width: 73px;
 
-  transition: color 250ms var(--timing-function);
+  transition: color var(--transmition-timing) var(--transmition-function);
 }
 .project-btn .btn-item:not(:last-child) {
   margin-right: 8px;
@@ -494,7 +510,7 @@ ul {
 .link-projects:hover,
 .link-projects:focus {
   box-shadow: var(--box-shadow-carts);
-  transition: box-shadow 250ms var(--timing-function);
+  transition: box-shadow var(--transmition-timing) var(--transmition-function);
 }
 
 .project-some {
@@ -512,7 +528,7 @@ ul {
   bottom: 0;
   right: 0;
   transform: translateY(100%);
-  transition: transform 250ms var(--timing-function);
+  transition: transform var(--transmition-timing) var(--transmition-function);
 }
 .hover-text {
   display: block;
@@ -523,12 +539,11 @@ ul {
   padding: 63px 24px;
   color: var(--main-white-color);
   background-color: rgba(33, 150, 243, 0.9);
-  /* opacity: 1; */
 }
 .project-list:hover .blue-box,
 .project-list:focus .blue-box {
   opacity: 0.9;
-  transition: transform 250ms var(--timing-function);
+  transition: transform var(--transmition-timing) var(--transmition-function);
   transform: translateY(0%);
 }
 
@@ -583,9 +598,9 @@ ul {
   padding: 16px 32px;
   font-size: 0;
 
-  transition: color 250ms var(--timing-function),
-    background-color 250ms var(--timing-function),
-    border 250ms var(--timing-function);
+  transition: color var(--transmition-timing) var(--transmition-function),
+    background-color var(--transmition-timing) var(--transmition-function),
+    border var(--transmition-timing) var(--transmition-function);
 }
 .clients-list .client-item:not(:first-child) {
   margin-left: 30px;
@@ -639,7 +654,7 @@ ul {
   font-style: normal;
   color: var(--rgba-white-color);
   text-decoration: none;
-  transition: color 250ms var(--timing-function);
+  transition: color var(--transmition-timing) var(--transmition-function);
 }
 .maps {
   color: var(--main-white-color);
@@ -675,8 +690,8 @@ ul {
   height: 40px;
   background-color: var(--icon-color-bg);
   border-radius: 50%;
-  transition: color 250ms var(--timing-function),
-    background-color 250ms var(--timing-function);
+  transition: color var(--transmition-timing) var(--transmition-function),
+    background-color var(--transmition-timing) var(--transmition-function);
 }
 .networks-list .networks-item:not(:first-child) {
   margin-left: 10px;
