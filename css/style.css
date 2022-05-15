@@ -228,7 +228,7 @@ ul {
   background-color: var(--btn-color-hover);
 }
 
-/* модальное окно */
+/* modal window */
 
 .backdrop {
   position: fixed;
@@ -247,7 +247,6 @@ ul {
   pointer-events: none;
   visibility: hidden;
 }
-
 .modal {
   position: absolute;
   top: 50%;
@@ -275,7 +274,6 @@ ul {
   background-color: var(--main-white-color);
   cursor: pointer;
 }
-
 .icon-close {
   fill: var(--logo-color-black);
 }
@@ -283,7 +281,6 @@ ul {
 .icon-close:focus {
   fill: var(--accent-color);
 }
-
 .content-list {
   display: flex;
 }
@@ -467,9 +464,9 @@ ul {
   padding: 6px 22px;
   min-width: 73px;
 
-  transition: color 250ms var(--transmition-function),
-    background-color 250ms var(--transmition-function),
-    box-shadow 250ms var(--transmition-function);
+  transition: color var(--transmition-timing) var(--transmition-function),
+    background-color var(--transmition-timing) var(--transmition-function),
+    box-shadow var(--transmition-timing) var(--transmition-function);
 }
 .btn-shows:hover,
 .btn-shows:focus {
@@ -498,7 +495,7 @@ ul {
 .project-list,
 .img {
   font-size: 0px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .link-projects {
@@ -529,7 +526,7 @@ ul {
   transform: translateY(100%);
   transition: transform var(--transmition-timing) var(--transmition-function);
 }
-.hover-text {
+.box-text {
   display: block;
   font-family: var(--main-font);
   font-size: 18px;
@@ -699,4 +696,5 @@ ul {
 
 .link-icon {
   fill: var(--main-white-color);
+  transition: fill var(--transmition-timing) var(--transmition-function);
 }
