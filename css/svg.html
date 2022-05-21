@@ -1,0 +1,30 @@
+.hide {
+display:none;
+}
+
+input:checked~svg .hide {
+display:block;
+}
+input:checked~svg .show {
+display:none;
+}
+
+
+<input type="checkbox">
+<svg class="curtain home" viewBox="0 0 100 100" preserveAspectRatio="none">
+  <defs>
+    <pattern id="img1" patternUnits="userSpaceOnUse" width="100" height="100">
+      <image xlink:href="https://picsum.photos/id/1000/800/800" x="0" y="0" width="100" height="100" />
+    </pattern>
+  </defs>
+  <polygon points="0,0 0,100 100,100 50,0" fill="url(#img1)" class="show">
+  </polygon>
+  <polygon points="0,0 0,100 100,100 50,0" fill="url(#img1)" class="hide">
+    <animate attributeName="points" dur="5s"
+      values="0,0 0,100 100,100 50,0 ; 50,40 30,60 80,10 50,70; 0,0 0,100 100,100 50,0" keyTimes="0;0.5;1"
+      repeatCount="indefinite" />
+  </polygon>
+</svg>
+
+
+

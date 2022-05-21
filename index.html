@@ -418,7 +418,7 @@
 
     <div class="subscribe">
       <h2 class="subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-      <input class="subscribe-input" type="text" id="mail" placeholder="E-mail" />
+      <input class="subscribe-input" type="text" name="mail" id="mail" placeholder="E-mail" />
 
       <button class="subscribe-btn" type="submit">Подписаться
         <svg class="sub-icon" width="24" height="24">
@@ -428,39 +428,52 @@
     </div>
 
 </div>
-
-
   </footer>
 
 <div class="backdrop is-hidden" data-modal>
-
   <div class="modal">
     <form class="form">
 
-      <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+      <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+
       <div class="form-field">
         <label for="name" class="form-label">Имя</label>
         <input type="text" name="name" id="name" class="form-input" />
+       <svg class="modal-icon" width="18" height="18">
+          <use href="./images/icons.svg/sprite.svg#icon-person"></use>
+        </svg>
+
       </div>
 
       <div class="form-field">
         <label for="phone" class="form-label">Телефон</label>
         <input type="tel" name="phone" id="phone" class="form-input" />
+      <svg class="modal-icon" width="18" height="18">
+        <use href="./images/icons.svg/sprite.svg#icon-phone-black"></use>
+      </svg>
+        
       </div>
 
       <div class="form-field">
         <label for="email" class="form-label">Почта</label>
         <input type="mail" name="email" id="email" class="form-input" />
+      <svg class="modal-icon" width="18" height="18">
+        <use href="./images/icons.svg/sprite.svg#icon-email-black"></use>
+      </svg>
+        
       </div>
 
-      <div class="form-field">
+      <div class="form-field a">
         <label for="comment" class="comment-label">Комментарий</label>
-        <textarea class="comment-window" name="" id="comment" rows="" placeholder="Введите текст"></textarea>
+        <textarea class="comment-window" name="comment" id="comment" rows="" placeholder="Введите текст"></textarea>
       </div>
       
       
-      <div class="form-field block">
-        <input type="checkbox" name="agreement" id="agreement" class="input-agreement" checked />
+      <div class="form-field b">
+        <input type="checkbox" name="agreement" id="agreement" class="input-agreement" />
+        <svg class="icon-checkbox" width="16" height="15">
+          <use class="" href="./images/icons.svg/sprite.svg#icon-blue-checkbox"></use>
+        </svg>
         <label for="agreement" class="label-agreement">Соглашаюсь с рассылкой и принимаю
           <a class="agreement-link" href="">Условия договора</a>
         </label>
