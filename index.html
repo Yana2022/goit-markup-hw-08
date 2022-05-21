@@ -38,13 +38,13 @@
       <li class="nav-item">
         <a class="nav-link clarification" href="mailto:info@devstudio.com">
       <svg class="contacts-icon" width="16px" height="12px">
-          <use class="icon-up" href="./images/icons.svg/sprite.svg#icon-envelope"></use>
+          <use href="./images/icons.svg/sprite.svg#icon-envelope"></use>
         </svg>info@devstudio.com</a>
       </li>
       <li class="nav-item">
         <a class="nav-link clarification" href="tel:+380961111111">
           <svg class="contacts-icon" width="10px" height="16px">
-            <use class="icon-up-phone" href="./images/icons.svg/sprite.svg#icon-smartphone"></use>
+            <use href="./images/icons.svg/sprite.svg#icon-smartphone"></use>
           </svg>+38 096 111 11 11</a>
       </li>
     </ul>
@@ -414,17 +414,69 @@
         </li>
       </ul>
   </div>
+
+
+    <div class="subscribe">
+      <h2 class="subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+      <input class="subscribe-input" type="text" id="mail" placeholder="E-mail" />
+
+      <button class="subscribe-btn" type="submit">Подписаться
+        <svg class="sub-icon" width="24" height="24">
+          <use href="./images/icons.svg/sprite.svg#icon-send"></use>
+        </svg>
+      </button>
+    </div>
+
 </div>
+
+
   </footer>
 
-  <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
+<div class="backdrop is-hidden" data-modal>
+
+  <div class="modal">
+    <form class="form">
+
+      <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+      <div class="form-field">
+        <label for="name" class="form-label">Имя</label>
+        <input type="text" name="name" id="name" class="form-input" />
+      </div>
+
+      <div class="form-field">
+        <label for="phone" class="form-label">Телефон</label>
+        <input type="tel" name="phone" id="phone" class="form-input" />
+      </div>
+
+      <div class="form-field">
+        <label for="email" class="form-label">Почта</label>
+        <input type="mail" name="email" id="email" class="form-input" />
+      </div>
+
+      <div class="form-field">
+        <label for="comment" class="comment-label">Комментарий</label>
+        <textarea class="comment-window" name="" id="comment" rows="" placeholder="Введите текст"></textarea>
+      </div>
+      
+      
+      <div class="form-field block">
+        <input type="checkbox" name="agreement" id="agreement" class="input-agreement" checked />
+        <label for="agreement" class="label-agreement">Соглашаюсь с рассылкой и принимаю
+          <a class="agreement-link" href="">Условия договора</a>
+        </label>
+      </div>
+
+      <button class="form-btn" type="submit">Отправить</button>
+
       <button class="close-button" type="button" data-modal-close>
         <svg  class="icon-close" width="30px" height="30px">
           <use href="./images/icons.svg/sprite.svg#icon-close"></use>
         </svg>
       </button>
+
+    </form>
     </div>
+
   </div>
 
   <script src="./js/modal.js"></script>
