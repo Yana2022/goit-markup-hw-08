@@ -118,6 +118,7 @@ ul {
   display: inline-block;
   align-items: center;
   justify-content: center;
+  vertical-align: middle;
   margin-right: 10px;
   fill: var(--main-txt-color);
 }
@@ -271,8 +272,7 @@ ul {
 }
 
 .form {
-  width: auto;
-  /* height: 100%; */
+  width: 528px;
   /* height: 581px; */
   padding: 40px;
 }
@@ -295,38 +295,33 @@ ul {
   position: absolute;
   bottom: 11px;
   left: 12px;
+
+  transform: ;
   fill: var(--logo-color-black);
   vertical-align: middle;
   transition: fill var(--transmition-timing) var(--transmition-function);
+  cursor: pointer;
 }
-.modal-icon:hover,
-.modal-icon:focus {
-  fill: var(--accent-color);
-}
+
 .form-input:hover + .modal-icon,
-.form-input:focus + .modal-icon {
+.modal-icon:hover,
+.form-input:focus + .modal-icon,
+.modal-icon:focus {
   fill: var(--accent-color);
 }
 
 .form-label,
 .comment-label {
-  font-style: 0;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   color: var(--main-txt-color);
 }
+
 .form-input {
-  border: 0;
-  border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
   width: 100%;
   height: 40px;
   padding: 11px 42px;
-  cursor: pointer;
-  caret-color: var(--accent-color);
-
-  transition: border var(--transmition-timing) var(--transmition-function);
 }
 
 .form-input:hover,
@@ -369,25 +364,34 @@ ul {
 }
 
 .comment-window {
-  display: block;
   resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  color: rgba(117, 117, 117, 0.5);
   font-size: 14px;
   line-height: 1.17;
 
-  width: 448px;
+  width: 100%;
   height: 120px;
   padding: 12px 16px;
+}
+.comment-window,
+.form-input {
+  display: inline-block;
+  border: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   cursor: pointer;
   caret-color: var(--accent-color);
+  outline: transparent;
   transition: border var(--transmition-timing) var(--transmition-function);
 }
-.a {
+.comment-window::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-field .mb20 {
   margin-bottom: 20px;
 }
-.b {
+.form-field .mb30 {
+  /* display: flex; */
+  position: relative;
   margin-bottom: 30px;
 }
 .input-agreement {
@@ -397,12 +401,27 @@ ul {
   vertical-align: middle;
   cursor: pointer;
 }
+
+.icon-checkbox {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+
+  opacity: 0;
+}
+.input-agreement:checked + .icon-checkbox {
+  opacity: 1;
+}
 .label-agreement {
+  /* position: relative; */
+  letter-spacing: 0.03em;
+  text-align: center;
   font-size: 14;
   font-weight: 400;
   line-height: 1.71;
   margin: 0;
 }
+
 .icon-checkbox {
   vertical-align: middle;
 }
@@ -852,6 +871,7 @@ ul {
   box-shadow: var(--order-btn-shadow);
   cursor: pointer;
   margin-right: 12px;
+  outline: transparent;
 }
 .subscribe-btn {
   font-weight: 700;
