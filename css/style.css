@@ -260,13 +260,31 @@ ul {
   transition: transform var(--transmition-timing) var(--transmition-function),
     opacity var(--transmition-timing) var(--transmition-function);
 }
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  margin: 0;
+  padding: 6px;
+
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  outline-offset: -1px;
+
+  background-color: transparent;
+  cursor: pointer;
+}
 
 .icon-close {
   fill: var(--logo-color-black);
   transition: fill var(--transmition-timing) var(--transmition-function);
 }
-.icon-close:hover,
-.icon-close:focus {
+.close-button:hover .icon-close,
+.close-button:focus .icon-close {
   fill: var(--accent-color);
 }
 
@@ -446,18 +464,6 @@ ul {
   font-weight: 400;
   line-height: 1.71;
   text-align: center;
-}
-
-.close-button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  border: 0;
-  padding: 0;
-  margin: 0;
-
-  background-color: transparent;
-  cursor: pointer;
 }
 
 .content-list {
