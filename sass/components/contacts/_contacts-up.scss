@@ -1,0 +1,21 @@
+.contacts-icon {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin-right: 10px;
+  fill: var(--main-txt-color);
+}
+.nav-link:hover .contacts-icon,
+.nav-link:focus .contacts-icon {
+  fill: var(--accent-color);
+}
+.clarification {
+  color: var(--main-txt-color);
+}
+.contacts {
+  margin-left: auto;
+}
+.contacts .nav-item:not(:last-child) {
+  margin-right: 50px;
+}

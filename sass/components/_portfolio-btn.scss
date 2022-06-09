@@ -1,0 +1,39 @@
+.project-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.project-btn .btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+.btn-shows {
+  min-width: 73px;
+  max-width: 200px;
+  min-height: 38px;
+  display: inline-block;
+  text-align: center;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.62;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  border: 0;
+  border-radius: 4px;
+  background-color: var(--btn-bg-color);
+  color: var(--secondary-txt-color);
+  cursor: pointer;
+
+  padding: 6px 22px;
+  min-width: 73px;
+
+  transition: color var(--transmition-timing) var(--transmition-function),
+    background-color var(--transmition-timing) var(--transmition-function),
+    box-shadow var(--transmition-timing) var(--transmition-function);
+}
+
+.btn-shows:hover,
+.btn-shows:focus {
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+  box-shadow: var(--box-shadow-color);
+}

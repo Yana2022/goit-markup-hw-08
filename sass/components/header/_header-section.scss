@@ -1,0 +1,29 @@
+.cancel-padding {
+  padding-top: 0px;
+}
+.site-nav .nav-link.current {
+  color: var(--accent-color);
+}
+.site-nav .nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: var(--secondary-txt-color);
+  line-height: 1.14;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition: color var(--transmition-timing) var(--transmition-function);
+  position: relative;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+  text-decoration: none;
+}

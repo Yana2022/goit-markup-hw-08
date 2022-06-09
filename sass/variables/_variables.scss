@@ -1,0 +1,27 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --main-txt-color: #757575;
+  --secondary-txt-color: #212121;
+  --accent-color: #2196f3;
+  --main-white-color: #ffffff;
+  --logo-color-black: #000000;
+  --secondary-bg-color: #2f303a;
+  --bg-color-hero: rgba(47, 48, 58, 0.4);
+  --btn-bg-color: #f5f4fa;
+  --bg-second-color: #c4c4c4;
+  --btn-color-hover: #188ce8;
+  --bg-line-color: #ececec;
+  --bg-frame-color: #eeeeee;
+  --icon-color: #afb1b8;
+  --icon-color-bg: #44454e;
+  --order-btn-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  --rgba-white-color: rgba(255, 255, 255, 0.6);
+  --box-shadow-color: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --box-shadow-sec-color: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  --box-shadow-carts: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  --transmition-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --transmition-timing: 250ms;
+}

@@ -1,0 +1,36 @@
+.networks-block {
+  align-items: baseline;
+}
+.join-title {
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--main-white-color);
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+}
+.networks-list {
+  display: flex;
+}
+.networks-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  background-color: var(--icon-color-bg);
+  border-radius: 50%;
+  transition: color var(--transmition-timing) var(--transmition-function),
+    background-color var(--transmition-timing) var(--transmition-function);
+}
+.networks-list .networks-item:not(:first-child) {
+  margin-left: 10px;
+}
+.networks-link:hover,
+.networks-link:focus {
+  background-color: var(--accent-color);
+}
+.link-icon {
+  fill: var(--main-white-color);
+  transition: fill var(--transmition-timing) var(--transmition-function);
+}

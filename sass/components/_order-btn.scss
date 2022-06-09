@@ -1,0 +1,28 @@
+.order-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+  box-shadow: var(--order-btn-shadow);
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: auto;
+  min-width: 200px;
+  max-width: 300px;
+  min-height: 50px;
+
+  transition: color var(--transmition-timing) var(--transmition-function);
+}
+.order-btn:hover,
+.order-btn:focus {
+  background-color: var(--btn-color-hover);
+}
+

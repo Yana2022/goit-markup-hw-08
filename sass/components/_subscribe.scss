@@ -1,0 +1,66 @@
+.subscribe {
+  margin-left: 93px;
+  align-items: baseline;
+}
+
+.subscribe-input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  width: 358px;
+  height: 50px;
+  align-items: baseline;
+
+  color: var(--main-white-color);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: var(--order-btn-shadow);
+
+  margin-right: 12px;
+  outline: transparent;
+  cursor: pointer;
+}
+
+.subscribe-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  vertical-align: baseline;
+  width: 200px;
+  height: 50px;
+
+  padding: 0;
+  border: 0;
+
+  border-radius: 4px;
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+  box-shadow: var(--order-btn-shadow);
+  transition: box-shadow var(--transmition-timing) var(--transmition-function),
+    background-color var(--transmition-timing) var(--transmition-function);
+  cursor: pointer;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: var(--btn-color-hover);
+}
+
+.sub-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  fill: var(--main-white-color);
+}
+
+.subscribe-title {
+  display: block;
+  font-weight: 700;
+  line-height: 1.17;
+  font-size: 14px;
+  color: var(--main-white-color);
+  margin-bottom: 20px;
+}

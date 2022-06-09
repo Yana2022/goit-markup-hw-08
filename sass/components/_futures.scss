@@ -1,0 +1,35 @@
+.content-list {
+  display: flex;
+}
+.list-description {
+  flex-wrap: wrap;
+  width: calc((100% - 90px) / 4);
+}
+.list-description:not(:last-child) {
+  margin-right: 30px;
+}
+.futures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 270px;
+  background-color: var(--btn-bg-color);
+  margin-bottom: 30px;
+}
+.futures-svg {
+  height: 70px;
+  width: 70px;
+}
+.content {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-txt-color);
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.text-content {
+  flex-wrap: wrap;
+}
