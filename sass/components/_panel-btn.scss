@@ -1,12 +1,16 @@
-.project-btn {
+/* Panel-btn */
+.panel-btn--disposition {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  list-style: none;
 }
-.project-btn .btn-item:not(:last-child) {
+
+.panel-btn__item:not(:last-child) {
   margin-right: 8px;
 }
-.btn-shows {
+
+.panel-btn__button {
   min-width: 73px;
   max-width: 200px;
   min-height: 38px;
@@ -31,8 +35,8 @@
     box-shadow var(--transmition-timing) var(--transmition-function);
 }
 
-.btn-shows:hover,
-.btn-shows:focus {
+.panel-btn__button:hover,
+.panel-btn__button:focus {
   color: var(--main-white-color);
   background-color: var(--accent-color);
   box-shadow: var(--box-shadow-color);

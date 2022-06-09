@@ -1,33 +1,32 @@
+// Variables
+@import "./variables/variables";
 // Utils
 @import "./utils/visually-hidden";
 // Base
 @import "./base/base";
-// Variables
-@import "./variables/variables";
-
 
 // Components
 @import "./components/container";
 @import "./components/section";
-@import "./components/header/header-section";
 @import "./components/header/header-borders";
 @import "./components/logo-up";
-@import "./components/contacts/contacts-up";
+@import "./components/header/header-section";
+@import "./components/contacts/contacts";
 @import "./components/hero";
-@import "./components/order-btn";
 @import "./components/futures";
-@import "./components/modal";
+
 @import "./components/about-work";
-@import "./components/our-team";
-@import "./components/portfolio-btn";
-@import "./components/portfolio-project";
-@import "./components/portfolio-blue-box";
-@import "./components/portfolio-project-detals";
+@import "./components/about-team";
 @import "./components/regular-clients";
-@import "./components/regular-clients-btn";
-@import "./components/clients-list";
 @import "./components/footer";
-@import "./components/logo-down";
-@import "./components/contacts/contacts-down";
 @import "./components/networks";
 @import "./components/subscribe";
+@import "./components/panel-btn";
+@import "./components/project-grid";
+@import "./components/blue-box";
+@import "./components/modal-window";
+@import "./components/checkbox";
+
+
+
+

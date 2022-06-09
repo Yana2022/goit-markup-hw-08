@@ -1,28 +1,35 @@
-.work-container,
-.team-container {
+/* About work */
+.work-title,
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--secondary-txt-color);
 }
-.work-container {
+
+.work-title {
   margin-bottom: 50px;
 }
+
 .work-list {
   display: flex;
   flex-wrap: wrap;
 }
-.work-list .work-content:not(:first-child) {
+
+.work__item:not(:first-child) {
   margin-left: 30px;
 }
-.work-content {
+
+.work__item {
   font-size: 0px;
 }
-.work-box {
+
+.work__wrapper {
   position: relative;
 }
-.work-text {
+
+.work__subtitle {
   font-weight: 700;
   letter-spacing: 0.03em;
   font-size: 14px;

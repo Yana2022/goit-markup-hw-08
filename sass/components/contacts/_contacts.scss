@@ -1,0 +1,37 @@
+/* Contacts */
+.contacts--about {
+  margin-left: auto;
+}
+
+.contacts__link:hover,
+.contacts__link:hover {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.contacts__icon {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin-right: 10px;
+  fill: var(--main-txt-color);
+}
+
+.contacts__link:hover .contacts__icon,
+.contacts__link:focus .contacts__icon {
+  fill: var(--accent-color);
+}
+
+.site-nav__link:hover .contacts__icon,
+.site-nav__link:focus .contacts__icon {
+  fill: var(--accent-color);
+}
+
+.contacts--about .contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__link {
+  color: var(--main-txt-color);
+}

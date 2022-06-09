@@ -1,5 +1,48 @@
-.footer-box {
+/* Footer section */
+.footer--disposition {
   background-color: var(--secondary-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.contacts-wrapper--disposition {
+  flex-grow: 1;
+  margin-right: 70px;
+}
+
+.footer__logo {
+  display: inline-block;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 26px;
+  color: var(--accent-color);
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.footer__logo-halph {
+  color: var(--main-white-color);
+  text-decoration: none;
+}
+
+.contacts-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contacts-list__link,
+.maps-links {
+  font-style: normal;
+  color: var(--rgba-white-color);
+  text-decoration: none;
+  transition: color var(--transmition-timing) var(--transmition-function);
+}
+
+.contacts-list__link--map {
+  color: var(--main-white-color);
+}
+
+.contacts-list__link:hover,
+.contacts-list__link:focus {
+  color: var(--accent-color);
 }

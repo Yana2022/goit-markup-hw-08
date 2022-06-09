@@ -1,6 +1,5 @@
-@import"./flex";
 @import "./reset";
-
+@import"./flex";
 body {
   font-family: var(--main-font);
   background-color: var(--main-white-color);
@@ -13,8 +12,5 @@ body {
   display: block;
   max-width: 100%;
   height: auto;
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  font-size: 0;
 }

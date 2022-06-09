@@ -1,11 +1,10 @@
-.hero {
+/* Hero */
+.hero--overlay {
   margin: 0 auto;
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
-}
 
-.overlay {
   max-width: 1600px;
   background-image: linear-gradient(to bottom,
       var(--bg-color-hero),
@@ -17,7 +16,7 @@
   background-color: var(--bg-second-color);
 }
 
-.title {
+.hero__title {
   color: var(--main-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -25,4 +24,33 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-bottom: 30px;
+}
+
+.hero__btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+  box-shadow: var(--hero-btn-shadow);
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: auto;
+  min-width: 200px;
+  max-width: 300px;
+  min-height: 50px;
+
+  transition: color var(--transmition-timing) var(--transmition-function);
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  background-color: var(--btn-color-hover);
 }

@@ -1,14 +1,14 @@
-.content-list {
-  display: flex;
-}
-.list-description {
+/* Futures */
+.futures__item {
   flex-wrap: wrap;
   width: calc((100% - 90px) / 4);
 }
-.list-description:not(:last-child) {
+
+.futures__item:not(:last-child) {
   margin-right: 30px;
 }
-.futures {
+
+.futures__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,11 +17,13 @@
   background-color: var(--btn-bg-color);
   margin-bottom: 30px;
 }
-.futures-svg {
+
+.futures__image {
   height: 70px;
   width: 70px;
 }
-.content {
+
+.futures__subtitle {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -30,6 +32,7 @@
   margin-top: 0px;
   margin-bottom: 10px;
 }
-.text-content {
+
+.futures__text {
   flex-wrap: wrap;
 }

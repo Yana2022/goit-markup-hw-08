@@ -1,7 +1,8 @@
-.header-border {
+.header--border {
   border-bottom: 1px solid var(--bg-line-color);
 }
-.border::after {
+
+.header--border-accent::after {
   position: absolute;
   content: "";
   bottom: 0;

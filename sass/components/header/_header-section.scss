@@ -1,13 +1,9 @@
-.cancel-padding {
-  padding-top: 0px;
-}
-.site-nav .nav-link.current {
-  color: var(--accent-color);
-}
-.site-nav .nav-item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.nav-link {
+
+.site-nav__link,
+.contacts__link {
   display: flex;
   align-items: center;
   color: var(--secondary-txt-color);
@@ -22,8 +18,12 @@
   transition: color var(--transmition-timing) var(--transmition-function);
   position: relative;
 }
-.nav-link:hover,
-.nav-link:focus {
+
+.site-nav__link--current {
+  color: var(--accent-color);
+}
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--accent-color);
   text-decoration: none;
 }

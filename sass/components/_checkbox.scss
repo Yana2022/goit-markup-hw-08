@@ -1,0 +1,95 @@
+/* Checkbox */
+.checkbox-agreement--disposition {
+  margin-bottom: 30px;
+}
+
+.checkbox-agreement__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: fill var(--transmition-timing) var(--transmition-function),
+    background-color var(--transmition-timing) var(--transmition-function);
+}
+
+.checkbox-agreement__input {
+  position: absolute;
+  appearance: none;
+}
+
+.checkbox-agreement__input:checked+.checkbox-agreement__icon .checkbox-agreement__svg {
+  opacity: 1;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+.checkbox-agreement__input:checked+.checkbox-agreement__icon {
+  outline: none;
+}
+
+.checkbox-agreement__icon {
+  width: 16px;
+  height: 15px;
+  margin-right: auto;
+  padding: 0;
+  border-radius: 2px;
+  outline: 1.5px solid var(--secondary-txt-color);
+  outline-offset: -1.5px;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.checkbox-agreement__svg {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  fill: var(--main-white-color);
+
+  transition: fill var(--transmition-timing) var(--transmition-function),
+    background-color var(--transmition-timing) var(--transmition-function);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.checkbox-agreement__text {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  line-height: 1.71;
+  text-align: center;
+}
+
+.checkbox-agreement__link {
+  color: var(--accent-color);
+}
+
+.checkbox-agreement__btn {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  margin: auto;
+  min-width: 200px;
+  max-width: 300px;
+  min-height: 50px;
+
+  padding: 10px 55px;
+
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+  box-shadow: var(--hero-btn-shadow);
+  transition: background-color var(--transmition-timing) var(--transmition-function);
+}
+
+.checkbox-agreement__btn:hover,
+.checkbox-agreement__btn:focus {
+  background-color: var(--btn-color-hover);
+}
