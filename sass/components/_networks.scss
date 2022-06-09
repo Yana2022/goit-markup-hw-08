@@ -1,15 +1,16 @@
 /* Networks */
 .networks {
   align-items: baseline;
-}
 
-.networks__title {
+  &__title {
   font-size: 14px;
   line-height: 1.17;
   color: var(--main-white-color);
   margin-bottom: 20px;
   padding-bottom: 0px;
 }
+}
+
 .networks-list--flex {
   display: flex;
   align-items: baseline;
@@ -29,11 +30,11 @@
   border-radius: 50%;
   transition: color var(--transmition-timing) var(--transmition-function),
     background-color var(--transmition-timing) var(--transmition-function);
-}
 
-.networks__link:hover,
-.networks__link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .link__icon {

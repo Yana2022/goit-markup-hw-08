@@ -33,11 +33,13 @@
   transition: color var(--transmition-timing) var(--transmition-function),
     background-color var(--transmition-timing) var(--transmition-function),
     box-shadow var(--transmition-timing) var(--transmition-function);
+
+
+  &:hover,
+  &:focus {
+    color: var(--main-white-color);
+    background-color: var(--accent-color);
+    box-shadow: var(--box-shadow-color);
+  }
 }
 
-.panel-btn__button:hover,
-.panel-btn__button:focus {
-  color: var(--main-white-color);
-  background-color: var(--accent-color);
-  box-shadow: var(--box-shadow-color);
-}

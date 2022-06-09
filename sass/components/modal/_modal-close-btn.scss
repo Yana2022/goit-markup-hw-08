@@ -16,11 +16,11 @@
 
   background-color: transparent;
   cursor: pointer;
-}
 
-.modal-close--disposition:hover .modal-close__icon,
-.modal-close--disposition:focus .modal-close__icon {
+&:hover .modal-close__icon,
+&:focus .modal-close__icon {
   fill: var(--accent-color);
+}
 }
 
 .modal-close__icon {

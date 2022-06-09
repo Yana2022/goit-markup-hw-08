@@ -8,6 +8,12 @@
   right: 0;
   transform: translateY(100%);
   transition: transform var(--transmition-timing) var(--transmition-function);
+
+.project-grid__link:hover &,
+.project-grid__link:focus & {
+    transition: transform var(--transmition-timing) var(--transmition-function);
+    transform: translateY(0%);
+  }
 }
 
 .blue-box__text {
@@ -20,11 +26,6 @@
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.project-grid__link:hover .blue-box--wrapper,
-.project-grid__link:focus .blue-box--wrapper {
-  transition: transform var(--transmition-timing) var(--transmition-function);
-  transform: translateY(0%);
-}
 
 .project-grid__detals {
   padding: 20px 24px;

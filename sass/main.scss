@@ -8,19 +8,12 @@
 // Components
 @import "./components/container";
 @import "./components/section";
-@import "./components/header/header-borders";
-
-@import "./components/header/logo-up";
-@import "./components/header/header-section";
+@import "./components/header/_module";
 @import "./components/contacts/contacts";
-
 @import "./components/hero";
-
 @import "./components/futures";
-
 @import "./components/about-work";
 @import "./components/about-team";
-
 @import "./components/regular-clients";
 @import "./components/footer";
 @import "./components/networks";
@@ -28,9 +21,7 @@
 @import "./components/panel-btn";
 @import "./components/project-grid";
 @import "./components/blue-box";
-@import "./components/modal-window";
-@import "./components/checkbox";
-@import "./components/modal-close-btn";
+@import "./components/modal/_modul-modal";
 
 
 

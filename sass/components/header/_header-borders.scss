@@ -1,8 +1,7 @@
 .header--border {
   border-bottom: 1px solid var(--bg-line-color);
-}
-
-.header--border-accent::after {
+  
+  &-accent::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -14,3 +13,5 @@
   border-radius: 2px;
   transition: opacity var(--transmition-timing) var(--transmition-function);
 }
+}
+

@@ -15,16 +15,17 @@
 .checkbox-agreement__input {
   position: absolute;
   appearance: none;
+
+&:checked+.checkbox-agreement__icon {
+  outline: none;
 }
 
-.checkbox-agreement__input:checked+.checkbox-agreement__icon .checkbox-agreement__svg {
+&:checked+.checkbox-agreement__icon .checkbox-agreement__svg {
   opacity: 1;
   background-color: var(--accent-color);
   border-radius: 2px;
 }
 
-.checkbox-agreement__input:checked+.checkbox-agreement__icon {
-  outline: none;
 }
 
 .checkbox-agreement__icon {
@@ -88,9 +89,11 @@
   background-color: var(--accent-color);
   box-shadow: var(--hero-btn-shadow);
   transition: background-color var(--transmition-timing) var(--transmition-function);
-}
 
-.checkbox-agreement__btn:hover,
-.checkbox-agreement__btn:focus {
+
+&:hover,
+&:focus {
   background-color: var(--btn-color-hover);
 }
+}
+

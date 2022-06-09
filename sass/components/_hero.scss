@@ -48,9 +48,10 @@
   min-height: 50px;
 
   transition: color var(--transmition-timing) var(--transmition-function);
-}
 
-.hero__btn:hover,
-.hero__btn:focus {
+&:hover,
+&:focus {
   background-color: var(--btn-color-hover);
 }
+}
+

@@ -5,10 +5,10 @@ display: flex;
 .futures__item {
   flex-wrap: wrap;
   width: calc((100% - 90px) / 4);
-}
 
-.futures__item:not(:last-child) {
+&:not(:last-child) {
   margin-right: 30px;
+}
 }
 
 .futures__wrapper {
