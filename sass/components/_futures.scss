@@ -1,4 +1,7 @@
 /* Futures */
+.futures-list--flex {
+display: flex;
+}
 .futures__item {
   flex-wrap: wrap;
   width: calc((100% - 90px) / 4);

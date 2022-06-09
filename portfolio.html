@@ -22,39 +22,39 @@
 
   <!-- Header section -->
   <header class="header header--border">
-    <div class="container flex">
+    <div class="container container--flex">
       <a class="logo header__logo" href="./index.html">Web<span class="logo header__logo-halph">Studio</span></a>
   
       <nav class="nav">
-        <ul class="site-nav flex">
+        <ul class="site-nav site-nav--flex">
           <li class="site-nav__item">
-            <a class="site-nav__link" href="./index.html">Студия</a>
+            <a class="site-nav__link site-nav__link--current" href="./index.html">Студия</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link site-nav__link--current header--border-accent" href="./portfolio.html">Портфолио</a>
+            <a class="site-nav__link header--border-accent" href="./portfolio.html">Портфолио</a>
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link" href="./index.html">Контакты</a>
           </li>
         </ul>
       </nav>
-    <!-- Contacts -->
-    <ul class="contacts contacts--about flex">
-      <li class="contacts__item">
-        <a class="contacts__link" href="mailto:info@devstudio.com">
-          <svg class="contacts__icon" width="16px" height="12px">
-            <use href="./images/icons.svg/sprite.svg#icon-envelope"></use>
-          </svg>info@devstudio.com</a>
-      </li>
-      <li class="contacts__item">
-        <a class="contacts__link" href="tel:+380961111111">
-          <svg class="contacts__icon" width="10px" height="16px">
-            <use href="./images/icons.svg/sprite.svg#icon-smartphone"></use>
-          </svg>+38 096 111 11 11</a>
-      </li>
-    </ul>
+      <!-- Contacts -->
+      <ul class="contacts contacts--about">
+        <li class="contacts__item">
+          <a class="contacts__link" href="mailto:info@devstudio.com">
+            <svg class="contacts__icon" width="16px" height="12px">
+              <use href="./images/icons.svg/sprite.svg#icon-envelope"></use>
+            </svg>info@devstudio.com</a>
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__link" href="tel:+380961111111">
+            <svg class="contacts__icon" width="10px" height="16px">
+              <use href="./images/icons.svg/sprite.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11</a>
+        </li>
+      </ul>
     </div>
-    </header>
+  </header>
 
   <!-- Main section -->
   <main>
@@ -216,14 +216,14 @@
 
   <!-- Footer section -->
   <footer class="footer footer--disposition">
-    <div class="container flex">
+    <div class="container container--flex">
       <div class="contacts-wrapper contacts-wrapper--disposition">
         <a class="logo footer__logo" href="./index.html">Web<span class="logo footer__logo-halph">Studio</span></a>
         <address>
           <ul class="contacts-list">
             <li class="contacts-list__item">
-              <a class="contacts-list__link contacts-list__link--map" href="https://goo.gl/maps/cZJvyfr7hVmBAETw7">г. Киев, пр-т Леси
-                Украинки, 26</a>
+              <a class="contacts-list__link contacts-list__link--map" href="https://goo.gl/maps/cZJvyfr7hVmBAETw7">г.
+                Киев, пр-т Леси Украинки, 26</a>
             </li>
             <li class="contacts-list__item">
               <a class="contacts-list__link" href="mailto:info@example.com">info@example.com</a>
@@ -234,55 +234,54 @@
           </ul>
         </address>
       </div>
-
-<!-- Networks -->
-<div class="networks">
-  <h2 class="networks__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
-  <ul class="networks-list flex">
-    <li class="networks__item">
-      <a class="networks__link" href="" aria-label="Instagram">
-        <svg class="link__icon" width="20px" height="20px">
-          <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="networks__item">
-      <a class="networks__link" href="" aria-label="Twitter">
-        <svg class="link__icon" width="20px" height="20px">
-          <use href="./images/icons.svg/sprite.svg#icon-twitter "></use>
-        </svg>
-      </a>
-    </li>
-    <li class="networks__item">
-      <a class="networks__link" href="" aria-label="Facebook">
-        <svg class="link__icon" width="20px" height="20px">
-          <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="networks__item">
-      <a class="networks__link" href="" aria-label="Linkedin">
-        <svg class="link__icon" width="20px" height="20px">
-          <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
-        </svg>
-      </a>
-    </li>
-  </ul>
-</div>
-
-<!-- Subscribe -->
-<form class="subscribe-form">
-  <h2 class="subscribe-form__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-  <input class="subscribe-form__input" type="text" name="mail" id="mail" placeholder="E-mail" />
-
-  <button class="subscribe-btn" type="submit">Подписаться
-    <svg class="subscribe-btn__icon" width="24" height="24">
-      <use href="./images/icons.svg/sprite.svg#icon-send"></use>
-    </svg>
-  </button>
-</form>
-</div>
-</footer>
+  
+      <!-- Networks -->
+      <div class="networks">
+        <h2 class="networks__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+        <ul class="networks-list networks-list--flex">
+          <li class="networks__item">
+            <a class="networks__link" href="" aria-label="Instagram">
+              <svg class="link__icon" width="20px" height="20px">
+                <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="networks__item">
+            <a class="networks__link" href="" aria-label="Twitter">
+              <svg class="link__icon" width="20px" height="20px">
+                <use href="./images/icons.svg/sprite.svg#icon-twitter "></use>
+              </svg>
+            </a>
+          </li>
+          <li class="networks__item">
+            <a class="networks__link" href="" aria-label="Facebook">
+              <svg class="link__icon" width="20px" height="20px">
+                <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="networks__item">
+            <a class="networks__link" href="" aria-label="Linkedin">
+              <svg class="link__icon" width="20px" height="20px">
+                <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Subscribe -->
+      <form class="subscribe-form">
+        <h2 class="subscribe-form__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+        <input class="subscribe-form__input" type="text" name="mail" id="mail" placeholder="E-mail" />
+  
+        <button class="subscribe-btn" type="submit">Подписаться
+          <svg class="subscribe-btn__icon" width="24" height="24">
+            <use href="./images/icons.svg/sprite.svg#icon-send"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
 
 </body>
 </html>

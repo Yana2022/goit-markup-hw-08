@@ -10,7 +10,10 @@
   margin-bottom: 20px;
   padding-bottom: 0px;
 }
-
+.networks-list--flex {
+  display: flex;
+  align-items: baseline;
+}
 .networks__item:not(:first-child) {
   margin-left: 10px;
 }

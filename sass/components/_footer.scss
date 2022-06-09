@@ -1,4 +1,8 @@
 /* Footer section */
+.container--flex {
+display: flex;
+align-items: baseline;
+}
 .footer--disposition {
   background-color: var(--secondary-bg-color);
   padding-top: 60px;
@@ -31,7 +35,7 @@
 }
 
 .contacts-list__link,
-.maps-links {
+.contacts-list__link--map {
   font-style: normal;
   color: var(--rgba-white-color);
   text-decoration: none;

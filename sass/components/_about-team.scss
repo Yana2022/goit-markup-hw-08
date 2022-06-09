@@ -1,8 +1,8 @@
 /* About team */
-.team-title {
+.team-title--position {
   margin-bottom: 50px;
 }
-.team-list {
+.team-list--position {
   display: flex;
   flex-wrap: wrap;
 }
@@ -13,10 +13,10 @@
   margin-right: 30px;
   font-size: 0px;
 }
-.team-list .team-list__item:nth-child(4n) {
+.team-list__item:nth-child(4n) {
   margin-right: 0;
 }
-.team-member {
+.team-member--position {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -38,10 +38,11 @@
   margin: 0px;
   margin-bottom: 16px;
 }
-.social-list {
+.social-list--flex {
+  display: flex;
   justify-content: center;
 }
-.social-list .social-list__item:not(:first-child) {
+.social-list__item:not(:first-child) {
   margin-left: 10px;
 }
 .social-list__link {

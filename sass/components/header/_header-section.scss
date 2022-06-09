@@ -1,3 +1,7 @@
+.site-nav--flex {
+  display: flex;
+  align-items: baseline;
+}
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
