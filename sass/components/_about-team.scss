@@ -5,6 +5,7 @@
 .team-list--position {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
 }
 .team-list__item {
   background: var(--main-white-color);
