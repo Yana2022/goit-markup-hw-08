@@ -1,8 +1,8 @@
-/* Futures */
-.futures-list--flex {
+/* features */
+.features {
 display: flex;
 }
-.futures__item {
+.features__item {
   flex-wrap: wrap;
   width: calc((100% - 90px) / 4);
 
@@ -11,7 +11,7 @@ display: flex;
 }
 }
 
-.futures__wrapper {
+.features__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,12 +21,12 @@ display: flex;
   margin-bottom: 30px;
 }
 
-.futures__image {
+.features__icon {
   height: 70px;
   width: 70px;
 }
 
-.futures__subtitle {
+.features__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -36,6 +36,6 @@ display: flex;
   margin-bottom: 10px;
 }
 
-.futures__text {
+.features__text {
   flex-wrap: wrap;
 }

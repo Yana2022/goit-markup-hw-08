@@ -1,13 +1,13 @@
 /* About team */
-.team-title--position {
-  margin-bottom: 50px;
-}
-.team-list--position {
+// .section__title--position {
+//   margin-bottom: 50px;
+// }
+.team {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
 }
-.team-list__item {
+.team__item {
   background: var(--main-white-color);
   box-shadow: var(--box-shadow-sec-color);
 
@@ -19,11 +19,11 @@
     }
 }
 
-.team-member--position {
+.team__box {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.team-member__name {
+.team__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -33,15 +33,15 @@
   margin: 0px;
   margin-bottom: 10px;
 }
-.team-member__post {
+.team__text {
   color: var(--main-txt-color);
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   margin: 0px;
-  margin-bottom: 16px;
+  margin-bottom: 16px; 
 }
-.social-list--flex {
+.social-list {
   display: flex;
   justify-content: center;
 }

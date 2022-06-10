@@ -1,5 +1,5 @@
 /* Contacts */
-.contacts--about {
+.contacts {
   display: flex;
   margin-left: auto;
   & .contacts__item:not(:last-child) {
@@ -46,9 +46,9 @@
   .contacts__link:focus & {
   fill: var(--accent-color);
 }
-.site-nav__link:hover &,
-.site-nav__link:focus & {
-  fill: var(--accent-color);
+  .site-nav__link:hover &,
+  .site-nav__link:focus & {
+    fill: var(--accent-color);
 }
 }
 

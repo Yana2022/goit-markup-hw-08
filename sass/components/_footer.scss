@@ -3,7 +3,7 @@
 display: flex;
 align-items: baseline;
 }
-.footer--disposition {
+.footer {
   background-color: var(--secondary-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -24,7 +24,7 @@ align-items: baseline;
   margin-bottom: 20px;
 }
 
-.footer__logo-halph {
+.logo-light {
   color: var(--main-white-color);
   text-decoration: none;
 }

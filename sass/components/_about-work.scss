@@ -1,23 +1,8 @@
 /* About work */
-.work-title {
-  margin-bottom: 50px;
-  
-  &,
-  .team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    color: var(--secondary-txt-color);
-    }
-}
-
 .work-list {
   display: flex;
   flex-wrap: wrap;
 }
-
-
 .work__item {
   font-size: 0px;
 
@@ -25,11 +10,9 @@
   margin-left: 30px;
 }
 }
-
 .work__wrapper {
   position: relative;
 }
-
 .work__subtitle {
   font-weight: 700;
   letter-spacing: 0.03em;
