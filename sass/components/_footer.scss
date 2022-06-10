@@ -1,5 +1,5 @@
 /* Footer section */
-.container--flex {
+.container__header {
 display: flex;
 align-items: baseline;
 }
@@ -8,7 +8,6 @@ align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 .contacts-wrapper--disposition {
   flex-grow: 1;
   margin-right: 70px;

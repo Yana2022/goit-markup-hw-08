@@ -1,17 +1,16 @@
-.header--border {
+.header {
   border-bottom: 1px solid var(--bg-line-color);
-  
-  &-accent::after {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  display: block;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  transition: opacity var(--transmition-timing) var(--transmition-function);
-}
-}
 
+  &-accent::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    display: block;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    transition: opacity var(--transmition-timing) var(--transmition-function);
+  }
+}
