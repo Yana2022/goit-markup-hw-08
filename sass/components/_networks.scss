@@ -8,9 +8,9 @@
   color: var(--main-white-color);
   margin-bottom: 20px;
   padding-bottom: 0px;
+  text-align: left;
 }
 }
-
 .networks-list--flex {
   display: flex;
   align-items: baseline;
@@ -18,7 +18,6 @@
 .networks__item:not(:first-child) {
   margin-left: 10px;
 }
-
 .networks__link {
   display: flex;
   justify-content: center;
@@ -36,7 +35,6 @@
     background-color: var(--accent-color);
   }
 }
-
 .link__icon {
   fill: var(--main-white-color);
   transition: fill var(--transmition-timing) var(--transmition-function);

@@ -2,17 +2,16 @@
 .subscribe-form {
   margin-left: 93px;
   align-items: baseline;
-}
 
-.subscribe-form__title {
-  display: block;
+  &__title {
   font-weight: 700;
   line-height: 1.17;
   font-size: 14px;
   color: var(--main-white-color);
   margin-bottom: 20px;
+  text-align: left;
 }
-
+}
 .subscribe-form__input {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -31,7 +30,6 @@
   outline: transparent;
   cursor: pointer;
 }
-
 .subscribe-btn {
   font-weight: 700;
   font-size: 16px;
@@ -58,7 +56,6 @@
     background-color: var(--btn-color-hover);
   }
 }
-
 .subscribe-btn__icon {
   display: inline-block;
   vertical-align: middle;

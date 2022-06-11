@@ -537,6 +537,7 @@ body {
   color: var(--main-white-color);
   margin-bottom: 20px;
   padding-bottom: 0px;
+  text-align: left;
 }
 
 .networks-list--flex {
@@ -575,12 +576,12 @@ body {
 }
 
 .subscribe-form__title {
-  display: block;
   font-weight: 700;
   line-height: 1.17;
   font-size: 14px;
   color: var(--main-white-color);
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .subscribe-form__input {
