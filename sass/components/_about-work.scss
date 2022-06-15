@@ -1,4 +1,11 @@
 /* About work */
+.section--hiding {
+  @media screen and (max-width: $tablet) {
+  display: none;
+}
+}
+
+
 .work-list {
   display: flex;
   flex-wrap: wrap;

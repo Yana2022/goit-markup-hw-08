@@ -1,27 +1,88 @@
 /* features */
 .features {
-display: flex;
-}
-.features__item {
-  flex-wrap: wrap;
-  width: calc((100% - 90px) / 4);
+min-width: 450px;
+padding-left: 15px;
+padding-right: 15px;
 
-&:not(:last-child) {
+@media screen and (min-width: $tablet) {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: $desktop) {
+  flex-wrap: wrap;
+  display: flex;
+}
+}
+
+.features__item {
+  width: 450px;
+  height: 226px;
+
+    &:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+  @media screen and (min-width: $tablet) {
+     display: flex;
+     flex-wrap: wrap;
+    //  justify-content: space-between;
+     width: calc((100% - 30px) / 2);
+     margin-right: 30px;
+
+     .future > &:nth-child(2n) > .features__wrapper {
+      margin-right: 30px;
+     }
+    }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% - 90px) / 4);
+    
+    &:not(:last-child) {
   margin-right: 30px;
 }
+    }
 }
 
 .features__wrapper {
+  // display: flex;
+  // justify-content: center;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
   height: 120px;
-  width: 270px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  // margin-left: 15px;
+  // margin-right: 15px;
+  // width: 270px;
   background-color: var(--btn-bg-color);
   margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        // width: 270px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        width: 270px;
+        margin-bottom: 30px;
+    }
 }
 
 .features__icon {
+  display: flex;
+  justify-content: center;
   height: 70px;
   width: 70px;
 }
@@ -34,8 +95,12 @@ display: flex;
   color: var(--secondary-txt-color);
   margin-top: 0px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .features__text {
   flex-wrap: wrap;
 }
+
+
+
