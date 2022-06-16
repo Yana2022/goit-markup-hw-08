@@ -1,16 +1,3 @@
 .header {
   border-bottom: 1px solid var(--bg-line-color);
-  padding-top: 16px;
-  padding-bottom: 16px;
-
-
-@media screen and (min-width: $tablet) {
-  padding-top: 26px;
-  padding-bottom: 26px;
-}
-
-@media screen and (min-width: $desktop) {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
 }
