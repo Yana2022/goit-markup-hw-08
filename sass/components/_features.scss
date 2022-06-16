@@ -1,56 +1,54 @@
 /* features */
 .features {
-min-width: 450px;
-padding-left: 15px;
-padding-right: 15px;
-
-@media screen and (min-width: $tablet) {
-  display: flex;
-  flex-wrap: wrap;
-  // margin-right: -15px;
-}
-@media screen and (min-width: $desktop) {
-  flex-wrap: wrap;
-  display: flex;
-}
-}
-
-.features__item {
-  // width: 450px;
-  // height: 226px;
-
-@media screen and (max-width: 767px) {
-    &:not(:last-child) {
-    margin-bottom: 30px;
-}
-}
+  min-width: 450px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    width: calc((100% - 30px) / 2);
-
-    .features__item:nth-child(2n + 1) {
-    margin-right: 30px;
-     }
-
-    //  margin-right: 15px;
-
-    }
+  }
 
   @media screen and (min-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
-    width: calc((100% - 90px) / 4);
-    
-    &:not(:last-child) {
-    margin-right: 30px;
+  }
 }
+
+.features__item {
+  min-width: 450px;
+
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: ((100% - 30px) / 2);
+    margin-right: 30px;
+
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    // height: 226px;
+    width: calc((100% - 90px) / 4);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .features__wrapper {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   height: 120px;
@@ -61,19 +59,19 @@ padding-right: 15px;
   margin-bottom: 30px;
 
   @media screen and (min-width: $tablet) {
-        display: flex;
-        justify-content: center;
-        height: 120px;
-        margin-bottom: 30px;
-    }
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        display: flex;
-        justify-content: center;
-        height: 120px;
-        width: 270px;
-        margin-bottom: 30px;
-    }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    width: 270px;
+    margin-bottom: 30px;
+  }
 }
 
 .features__icon {
@@ -92,14 +90,11 @@ padding-right: 15px;
   margin-top: 0px;
   margin-bottom: 10px;
 
-      @media screen and (max-width: 1199px) {
-        text-align: center;
-      }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .features__text {
   flex-wrap: wrap;
 }
-
-
-
