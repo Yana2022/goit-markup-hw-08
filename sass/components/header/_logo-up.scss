@@ -1,8 +1,8 @@
 .header__logo {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
   background-color: var(--main-white-color);
   color: var(--accent-color);
   text-decoration: none;
@@ -19,8 +19,12 @@
   
     @media screen and (min-width: $desktop) {
       display: inline-block;
+      line-height: 1.19;
+      font-size: 26px;
+      letter-spacing: 0.03em;
+
       padding-top: 24px;
-      padding-bottom: 21px;
+      padding-bottom: 25px;
       margin-right: 93px;
       margin-left: 0;
     }

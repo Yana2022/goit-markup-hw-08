@@ -2,13 +2,12 @@
 .contacts {
   display: none;
   font-size: 12px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   margin-left: 84px;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
     display: block;
-    letter-spacing: 0.02em;
-    line-height: 1.14;
-
     &__item:not(:last-child) {
         margin-bottom: 10px;
       }
@@ -27,7 +26,7 @@
 }
 .contacts__link {
   color: var(--secondary-txt-color);
-  line-height: 1.14;
+
   font-weight: 500;
   text-decoration: none;
   letter-spacing: 0.02em;
@@ -37,6 +36,8 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
+    line-height: 1.14;
+    font-style: 14px;
   }
 
     @media screen and (min-width: $desktop) {
@@ -47,7 +48,6 @@
     padding-bottom: 32px;
 
   }
-
 
   &:hover,
     &:hover {

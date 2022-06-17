@@ -1,10 +1,9 @@
 /* features */
 .features {
-  // min-width: 450px;
 
   @media screen and (min-width: $tablet) {
     display: flex;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   @media screen and (min-width: $desktop) {
@@ -23,10 +22,8 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    width: 354px;
-    
-    // width: calc((100% - 30px) / 2);
-    // margin-right: 30px;
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
 
    &:nth-child(2n+1) {
     margin-right: 30px;
@@ -34,7 +31,6 @@
   }
 
   @media screen and (min-width: $desktop) {
-    // height: 226px;
     width: calc((100% - 90px) / 4);
 
     &:not(:last-child) {

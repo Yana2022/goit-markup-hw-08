@@ -86,6 +86,10 @@ body {
   .container {
     width: 768px;
   }
+  .container__header {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -94,9 +98,13 @@ body {
   }
 }
 
+.container__footer {
+  display: flex;
+  align-items: baseline;
+}
+
 .container__header {
   display: flex;
-  align-items: center;
 }
 
 .section__title {
@@ -133,8 +141,8 @@ body {
 .header__logo {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
   background-color: var(--main-white-color);
   color: var(--accent-color);
   text-decoration: none;
@@ -154,8 +162,11 @@ body {
 @media screen and (min-width: 1200px) {
   .header__logo {
     display: inline-block;
+    line-height: 1.19;
+    font-size: 26px;
+    letter-spacing: 0.03em;
     padding-top: 24px;
-    padding-bottom: 21px;
+    padding-bottom: 25px;
     margin-right: 93px;
     margin-left: 0;
   }
@@ -172,7 +183,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .nav {
-    display: flex;
+    display: block;
   }
 }
 
@@ -189,9 +200,9 @@ body {
   display: flex;
   align-items: center;
   color: var(--secondary-txt-color);
-  line-height: 1.14;
   font-weight: 500;
   text-decoration: none;
+  font-size: 1.14;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -253,14 +264,14 @@ body {
 .contacts {
   display: none;
   font-size: 12px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   margin-left: 84px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .contacts {
     display: block;
-    letter-spacing: 0.02em;
-    line-height: 1.14;
   }
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
@@ -281,7 +292,6 @@ body {
 
 .contacts__link {
   color: var(--secondary-txt-color);
-  line-height: 1.14;
   font-weight: 500;
   text-decoration: none;
   letter-spacing: 0.02em;
@@ -292,6 +302,8 @@ body {
 @media screen and (min-width: 768px) {
   .contacts__link {
     display: flex;
+    line-height: 1.14;
+    font-style: 14px;
   }
 }
 
@@ -403,6 +415,7 @@ body {
 @media screen and (min-width: 768px) {
   .features {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -422,7 +435,8 @@ body {
   .features__item {
     display: flex;
     flex-wrap: wrap;
-    width: 354px;
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
   }
   .features__item:nth-child(2n+1) {
     margin-right: 30px;

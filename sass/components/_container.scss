@@ -8,6 +8,10 @@
 
 @media screen and (min-width: $tablet) {
   width: 768px;
+  &__header {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: $desktop) {
@@ -15,8 +19,11 @@
 }
 }
 
-.container__header {
+.container__footer {
   display: flex;
   // justify-content: flex-end;
-  align-items: center;
+  align-items: baseline;
+}
+.container__header {
+  display: flex;
 }
