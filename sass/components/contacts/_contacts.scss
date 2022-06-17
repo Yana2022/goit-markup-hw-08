@@ -1,26 +1,53 @@
 /* Contacts */
 .contacts {
-  display: flex;
-  margin-left: auto;
-  & .contacts__item:not(:last-child) {
-      margin-right: 50px;
+  display: none;
+  font-size: 12px;
+  margin-left: 84px;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+
+    &__item:not(:last-child) {
+        margin-bottom: 10px;
+      }
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-left: auto;
+    font-size: 14px;
+    line-height: 1.17;
+
+    & .contacts__item:not(:last-child) {
+    margin-right: 50px;
     }
+  }
 }
 .contacts__link {
-  display: flex;
-  align-items: center;
   color: var(--secondary-txt-color);
   line-height: 1.14;
   font-weight: 500;
   text-decoration: none;
   letter-spacing: 0.02em;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   transition: color var(--transmition-timing) var(--transmition-function);
-  position: relative;
   color: var(--main-txt-color);
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+
+    @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+  }
+
 
   &:hover,
     &:hover {
@@ -38,10 +65,29 @@
   display: inline-block;
   align-items: center;
   justify-content: center;
+  vertical-align: bottom;
+  margin-right: 8px;
+  fill: var(--main-txt-color);
+
+  @media screen and (min-width: $tablet) {
+// display: flex;
+}
+
+  @media screen and (min-width: $desktop) {
   vertical-align: middle;
   margin-right: 10px;
-  fill: var(--main-txt-color);
+  &--email-width {
+      width: 16px;
+      height: 12px;
+    }
   
+    &--phone-width {
+      width: 10px;
+      height: 16px;
+    }
+  }
+
+
   .contacts__link:hover &,
   .contacts__link:focus & {
   fill: var(--accent-color);

@@ -1,3 +1,6 @@
+
+@import "../components/section__title";
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -6,9 +9,8 @@
     padding-top: 94px;
     padding-bottom: 94px;
 }
-    }
+}
 
 .section--no-padding-top {
   padding-top: 0px;
 }
-@import "../components/section__title";

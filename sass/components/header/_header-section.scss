@@ -1,3 +1,11 @@
+.nav {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+  display: flex;
+  }
+}
+
 .site-nav {
   display: flex;
   align-items: baseline;

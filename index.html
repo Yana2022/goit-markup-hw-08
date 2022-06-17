@@ -23,7 +23,18 @@
   <div class="container container__header">
     <a class="logo header__logo" href="./index.html">Web<span class="logo-dark">Studio</span></a>
 
-    <nav class="nav">
+
+    <button class="button-menu is--open" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+      <svg class="button-icon" aria-label="Переключатель мобильного меню" height="40" width="40">
+        <use class="button-icon__menu" href="./images/icons.svg/sprite.svg#burger-menu"></use>
+        <use class="button-icon__cross" href="./images/icons.svg/sprite.svg#burger-close"></use>
+      </svg>
+    </button>
+
+
+<div class="menu-container" id="menu-container" data-menu></div>
+
+   <nav class="nav">
       <ul class="site-nav">
         <li class="site-nav__item">
           <a class="site-nav__link site-nav__link--color" href="./index.html">Студия</a>
@@ -35,18 +46,18 @@
           <a class="site-nav__link" href="./index.html">Контакты</a>
         </li>
       </ul>
-</nav>
+</nav> 
     <!-- Contacts -->
 <ul class="contacts">
       <li class="contacts__item">
         <a class="contacts__link" href="mailto:info@devstudio.com">
-      <svg class="contacts__icon" width="16px" height="12px">
+      <svg class="contacts__icon contacts__icon--email-width" width="14px" height="10px">
           <use href="./images/icons.svg/sprite.svg#icon-envelope"></use>
         </svg>info@devstudio.com</a>
       </li>
       <li class="contacts__item">
         <a class="contacts__link" href="tel:+380961111111">
-          <svg class="contacts__icon" width="10px" height="16px">
+          <svg class="contacts__icon contacts__icon--phone-width" width="10px" height="14px">
             <use href="./images/icons.svg/sprite.svg#icon-smartphone"></use>
           </svg>+38 096 111 11 11</a>
       </li>
@@ -56,12 +67,12 @@
 
   <!-- Main section -->
 <main>
-    <section class="hero">
+    <!-- <section class="hero">
     <div class="container">
       <h1 class="hero__title">Эффективные решения<br> для вашего бизнеса</h1>
       <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
     </div>
-    </section>
+    </section> -->
 
 <!-- features -->
      <section class="section">
@@ -122,7 +133,7 @@
  </section>
 
 <!-- About work -->
-  <section class="section section--no-padding-top section--hiding">
+  <!-- <section class="section section--no-padding-top section--hiding">
    <div class="container">
       <h2 class="section__title">Чем мы занимаемся</h2>
       <ul class="work-list">
@@ -146,10 +157,10 @@
         </li>
       </ul>
     </div>
-  </section>
+  </section> -->
 
 <!-- About team -->
-<section class="section section--bg-color">
+<!-- <section class="section section--bg-color">
 <div class="container">
     <h2 class="section__title section__title--position">Наша команда</h2>
       <ul class="team">
@@ -313,7 +324,7 @@
     </li>
   </ul>
 </div>
- </section>
+ </section> -->
 
 <!-- Regular clients -->
 <section class="section">
@@ -371,7 +382,7 @@
   </main>
 
   <!-- Footer section -->
-<footer class="footer">
+<!-- <footer class="footer">
   <div class="container container__header">
 <div class="contacts-wrapper contacts-wrapper--disposition">
     <a class="logo footer__logo" href="./index.html">Web<span class="logo-light">Studio</span></a>
@@ -388,10 +399,10 @@
         </li>
       </ul>
     </address>
-</div>
+</div> -->
 
 <!-- Networks -->
-<div class="networks">
+<!-- <div class="networks">
       <h2 class="section__title networks__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
       <ul class="networks-list networks-list--flex">
         <li class="networks__item">
@@ -423,10 +434,10 @@
           </a>
         </li>
       </ul>
-  </div>
+  </div> -->
 
 <!-- Subscribe -->
-<form class="subscribe-form">
+<!-- <form class="subscribe-form">
       <h2 class="section__title subscribe-form__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
       <input class="subscribe-form__input" type="text" name="mail" id="mail" placeholder="E-mail" />
 
@@ -437,7 +448,7 @@
       </button>
     </form>
 </div>
-  </footer>
+  </footer> -->
 
 <!-- modal section -->
 <div class="backdrop backdrop--disposition is-hidden" data-modal>

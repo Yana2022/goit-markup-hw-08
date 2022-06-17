@@ -6,23 +6,24 @@
   background-color: var(--main-white-color);
   color: var(--accent-color);
   text-decoration: none;
+  display: flex;
 
-  display: inline-block;
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-right: 93px;
 
     @media screen and (min-width: $tablet) {
       padding-top: 26px;
-      padding-bottom: 26px;
+      padding-bottom: 22px;
+      margin-right: 88px;
     }
   
     @media screen and (min-width: $desktop) {
+      display: inline-block;
       padding-top: 24px;
       padding-bottom: 21px;
+      margin-right: 93px;
+      margin-left: 0;
     }
-
-
 }
 
 .logo-dark {
