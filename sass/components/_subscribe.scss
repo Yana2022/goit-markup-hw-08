@@ -1,7 +1,16 @@
 /* Subscribe */
 .subscribe-form {
+text-align: center;
+
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: $desktop) {
   margin-left: 93px;
   align-items: baseline;
+}
 
   &__title {
   font-weight: 700;
@@ -9,14 +18,19 @@
   font-size: 14px;
   color: var(--main-white-color);
   margin-bottom: 20px;
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
   text-align: left;
+  }
 }
 }
 .subscribe-form__input {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
-  width: 358px;
+  max-width: 450px;
+  width: calc(100vw - 30px);
   height: 50px;
   align-items: baseline;
 
@@ -25,10 +39,16 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   box-shadow: var(--hero-btn-shadow);
+  margin-bottom: 20px;
 
-  margin-right: 12px;
   outline: transparent;
   cursor: pointer;
+
+@media screen and (min-width: $desktop) {
+  margin-right: 12px;
+  width: 358px;
+}
+
 }
 .subscribe-btn {
   font-weight: 700;

@@ -1,3 +1,14 @@
 .header {
   border-bottom: 1px solid var(--bg-line-color);
+
+
+  @media screen and (max-width: 767px) {
+  justify-content: center;
+
+  .container__header {
+  display: flex;
+  align-items: center;
 }
+  }
+    }
+

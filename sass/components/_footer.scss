@@ -6,19 +6,31 @@
   padding-bottom: 60px;
 }
 .contacts-wrapper--disposition {
+
+  @media screen and (min-width: $desktop) {
   flex-grow: 1;
   margin-right: 70px;
+  }
+
 }
 
 .footer__logo {
-  display: inline-block;
+  display: block;
   font-family: var(--secondary-font);
   font-weight: 700;
-  line-height: 1.2;
-  font-size: 26px;
+  font-size: 24px;
+  line-height: 1.17;
+
   color: var(--accent-color);
   text-decoration: none;
+  text-align: center;
   margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop) {
+  font-size: 26px;
+  line-height: 1.19;
+  text-align: left;
+  }
 }
 
 .logo-light {
@@ -26,9 +38,26 @@
   text-decoration: none;
 }
 
-.contacts-list__item:not(:last-child) {
+.contacts-list {
+  margin-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+  text-align: left;
+  }
+}
+.contacts-list__item {
+  &:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+  @media screen and (min-width: $desktop) {
+  &:not(:last-child) {
   margin-bottom: 9px;
 }
+}
+}
+
 
 .contacts-list__link,
 .contacts-list__link--map {

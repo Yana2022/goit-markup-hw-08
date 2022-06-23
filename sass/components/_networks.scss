@@ -1,6 +1,11 @@
 /* Networks */
 .networks {
   align-items: baseline;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+  margin-bottom: 20px;
+}
 
   &__title {
   font-size: 14px;
@@ -8,15 +13,20 @@
   color: var(--main-white-color);
   margin-bottom: 20px;
   padding-bottom: 0px;
+  text-align: center;
+
+
+  @media screen and (min-width: $desktop) {
   text-align: left;
-}
+  }
 }
 .networks-list--flex {
   display: flex;
   align-items: baseline;
 }
-.networks__item:not(:first-child) {
-  margin-left: 10px;
+}
+.networks__item:not(:last-child) {
+  margin-right: 10px;
 }
 .networks__link {
   display: flex;

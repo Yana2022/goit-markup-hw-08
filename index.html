@@ -23,16 +23,12 @@
   <div class="container container__header">
     <a class="logo header__logo" href="./index.html">Web<span class="logo-dark">Studio</span></a>
 
-
-    <button class="button-menu is--open" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-      <svg class="button-icon" aria-label="Переключатель мобильного меню" height="40" width="40">
-        <use class="button-icon__menu" href="./images/icons.svg/sprite.svg#burger-menu"></use>
-        <use class="button-icon__cross" href="./images/icons.svg/sprite.svg#burger-close"></use>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-overlay data-menu-button" data-menu-button>
+      <svg class="menu-btn__icon" aria-label="Переключатель мобильного меню" height="40" width="40">
+        <use class="menu-btn__icon-open" href="./images/icons.svg/sprite.svg#open-menu-icon"></use>
+        <use class="menu-btn__icon-close" href="./images/icons.svg/sprite.svg#close-menu-icon"></use>
       </svg>
     </button>
-
-
-<div class="menu-container" id="menu-container" data-menu></div>
 
    <nav class="nav">
       <ul class="site-nav">
@@ -328,7 +324,7 @@
 
 <!-- Regular clients -->
 <section class="section">
-<div class="container">
+  <div class="container">
 <h2 class="section__title">Постоянные клиенты</h2>
 
 <ul class="client">
@@ -376,13 +372,13 @@
       </a>
   </li>
 </ul>
-</div>
+  </div>
 
- </section>
+</section>
   </main>
 
   <!-- Footer section -->
-<!-- <footer class="footer">
+<footer class="footer">
   <div class="container container__footer">
 <div class="contacts-wrapper contacts-wrapper--disposition">
     <a class="logo footer__logo" href="./index.html">Web<span class="logo-light">Studio</span></a>
@@ -399,10 +395,10 @@
         </li>
       </ul>
     </address>
-</div> -->
+</div>
 
 <!-- Networks -->
-<!-- <div class="networks">
+<div class="networks">
       <h2 class="section__title networks__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
       <ul class="networks-list networks-list--flex">
         <li class="networks__item">
@@ -434,10 +430,10 @@
           </a>
         </li>
       </ul>
-  </div> -->
+  </div>
 
 <!-- Subscribe -->
-<!-- <form class="subscribe-form">
+<form class="subscribe-form">
       <h2 class="section__title subscribe-form__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
       <input class="subscribe-form__input" type="text" name="mail" id="mail" placeholder="E-mail" />
 
@@ -448,7 +444,7 @@
       </button>
     </form>
 </div>
-  </footer> -->
+  </footer>
 
 <!-- modal section -->
 <div class="backdrop backdrop--disposition is-hidden" data-modal>
@@ -515,14 +511,67 @@
           <use href="./images/icons.svg/sprite.svg#icon-close"></use>
         </svg>
 </button>
-
     </form>
+    </div>
+  </div>
+<!-- Mobile-menu -->
+<div class="mobile-overlay" id="mobile-overlay" data-menu>
+
+  <div class="mobile-menu">
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link mobile-nav--acent" href="./index.html">Студия</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="./index.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="mobile-menu__contacts">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu--accent-color" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mobile-social">
+      <ul class="mobile-social__list">
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram">Instagram
+          </a>
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter
+          </a>
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer"
+            aria-label="Facebook">Facebook
+          </a>
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer"
+            aria-label="Linkedin">Linkedin
+          </a>
+        </li>
+      </ul>
     </div>
 
   </div>
+</div>
 
+<script src="./js/mobile-menu.js"></script>
+<script src="./js/modal.js"></script>
 
-
-  <script src="./js/modal.js"></script>
 </body>
 </html>
