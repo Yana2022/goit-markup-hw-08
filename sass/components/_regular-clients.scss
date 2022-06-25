@@ -1,19 +1,28 @@
 /* Regular clients */
 .client {
+
+@media screen and (max-width: 479px) {
+  display: grid;
+  justify-content: center;
+}
+  @media screen and (min-width: $mobile) {
   display: flex;
   flex-wrap: wrap;
-
-  // @media screen and (min-width: 350px) and (max-width: 767px) {
-  // width: 480px;
-  // }
+  }
 }
 
 .client__item {
   height: 92px;
-  width: 210px;
 
-  @media screen and (min-width: 350px) and (max-width: 767px) {
-  width: calc(100% - 30px) / 2;
+@media screen and (max-width: 479px) {
+  width: 91vw;
+  &:not(:last-child) {
+  margin-bottom: 30px;
+  }
+}
+
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
+  width: calc((100% - 30px) / 2);
 
   &:not(:nth-child(2n+2)) {
   margin-right: 30px;
@@ -23,7 +32,7 @@
   }
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1190px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
   width: calc((100% - 60px) / 3);
 
   &:not(:nth-last-child(-n+3)) {
@@ -35,7 +44,7 @@
 }
 
   @media screen and (min-width: $desktop) {
-  width: 210px;
+  // width: 170px;
   width: calc((100% - 150px) / 6);
 
   &:not(:last-child) {
