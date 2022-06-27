@@ -13,9 +13,9 @@
   pointer-events: none;
   background-color: var(--main-white-color);
 
-  //   @media screen and (min-width: 480px) and (max-width: 767px) {
-
-  // }
+  @media screen and (min-width: $tablet) {
+  display: none;
+  }
 
   &.is-open {
     transform: translateX(0);
