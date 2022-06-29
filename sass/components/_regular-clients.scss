@@ -2,8 +2,12 @@
 .client {
 
 @media screen and (max-width: 479px) {
-  display: grid;
+  display: flex;
   justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
 }
   @media screen and (min-width: $mobile) {
   display: flex;
@@ -15,10 +19,9 @@
   height: 92px;
 
 @media screen and (max-width: 479px) {
-  width: 91vw;
-  &:not(:last-child) {
-  margin-bottom: 30px;
-  }
+  // width: 91vw;
+  width: calc((100% - 30px) / 2);
+  max-width: 210px;
 }
 
   @media screen and (min-width: $mobile) and (max-width: 767px) {
@@ -44,7 +47,6 @@
 }
 
   @media screen and (min-width: $desktop) {
-  // width: 170px;
   width: calc((100% - 150px) / 6);
 
   &:not(:last-child) {

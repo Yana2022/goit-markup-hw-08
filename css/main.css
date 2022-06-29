@@ -727,8 +727,11 @@ body {
 /* Regular clients */
 @media screen and (max-width: 479px) {
   .client {
-    display: grid;
+    display: flex;
     justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
@@ -745,10 +748,8 @@ body {
 
 @media screen and (max-width: 479px) {
   .client__item {
-    width: 91vw;
-  }
-  .client__item:not(:last-child) {
-    margin-bottom: 30px;
+    width: calc((100% - 30px) / 2);
+    max-width: 210px;
   }
 }
 
@@ -1463,21 +1464,31 @@ body {
   transition: fill var(--transmition-function --transmition-timing);
 }
 
+.menu-btn__icon.menu-btn__icon-close {
+  z-index: 10001;
+}
+
 .menu-btn .menu-btn__icon-open {
   opacity: 1;
 }
 
-.menu-btn .is-active .menu-btn__icon-open {
+.menu-btn.is-active .menu-btn__icon-close {
+  opacity: 1;
+}
+
+.menu-btn.is-active .menu-btn__icon-close .menu-btn__icon-close:hover,
+.menu-btn.is-active .menu-btn__icon-close .menu-btn__icon-close:focus {
+  fill: var(--accent-color);
+  transition: fill transform var(--transmition-function --transmition-timing);
+}
+
+.menu-btn.is-active .menu-btn__icon-open {
   opacity: 0;
 }
 
 .menu-btn .menu-btn__icon-close {
   opacity: 0;
   fill: var(--logo-color-black);
-}
-
-.menu-btn .is-active .menu-btn__icon-close {
-  opacity: 1;
 }
 
 .mobile-overlay {
