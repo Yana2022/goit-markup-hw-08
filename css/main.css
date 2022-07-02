@@ -1136,10 +1136,15 @@ body.modal-open {
 }
 
 /* Project */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .project-grid {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 
@@ -1150,30 +1155,14 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .project-grid__item {
-    width: calc((100% - 30px) 2);
+    flex-basis: calc((100% - 30px) 2);
     width: 354px;
-  }
-  .project-grid__item:nth-child(2n+1) {
-    margin-right: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .project-grid__item:not(:last-child) {
-    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .project-grid__item {
     width: calc((100% - 60px) / 3);
-    margin-right: 30px;
-  }
-  .project-grid__item:nth-child(3n) {
-    margin-right: 0px;
-  }
-  .project-grid__item:not(:nth-last-child(-n + 3)) {
-    margin-bottom: 30px;
   }
 }
 
@@ -1254,6 +1243,8 @@ body.modal-open {
   right: 0;
   transform: translateY(100%);
   transition: transform var(--transmition-timing) var(--transmition-function);
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1317,7 +1308,7 @@ body.modal-open {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 20000;
   background-color: rgba(0, 0, 0, 0.5);
   transition: opacity var(--transmition-timing) var(--transmition-function), visibility var(--transmition-timing) var(--transmition-function);
@@ -1328,6 +1319,7 @@ body.modal-open {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 90%;
   background-color: var(--main-white-color);
   box-shadow: var(--box-shadow-sec-color);
   border-radius: 4px;
@@ -1486,7 +1478,7 @@ body.modal-open {
 .checkbox-agreement__svg {
   display: flex;
   align-items: baseline;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   fill: var(--main-white-color);
   transition: fill var(--transmition-timing) var(--transmition-function), background-color var(--transmition-timing) var(--transmition-function);
