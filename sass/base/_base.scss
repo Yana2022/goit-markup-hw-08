@@ -10,7 +10,10 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
-
+body.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
 .img {
   display: block;
   max-width: 100%;

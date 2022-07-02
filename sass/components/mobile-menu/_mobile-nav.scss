@@ -12,9 +12,9 @@
 
     &:not(:last-child) {
     margin-bottom: 32px;
-  }
-  &:hover,
-  &:focus {
+    }
+    &:hover,
+    &:focus {
     color: var(--accent-color);
     text-decoration: none;
 }

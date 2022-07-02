@@ -32,21 +32,18 @@
   width: 40px;
   height: 40px;
   transition: fill var(--transmition-function --transmition-timing);
-
-  &.menu-btn__icon-close {
-  z-index: 10001;
-  }
-
 }
 
 .menu-btn .menu-btn__icon-open {
   opacity: 1;
 }
 .menu-btn.is-active .menu-btn__icon-close {
+  position: fixed;
+  fill: var(--logo-color-black);
   opacity: 1;
-  
-  .menu-btn__icon-close:hover,
-  .menu-btn__icon-close:focus {
+
+.menu-btn.is-active .menu-btn__icon-close:hover,
+.menu-btn.is-active .menu-btn__icon-close:focus {
   fill: var(--accent-color);
   transition: fill transform var(--transmition-function --transmition-timing);
 }
@@ -56,8 +53,8 @@
 }
 .menu-btn .menu-btn__icon-close {
   opacity: 0;
-  fill: var(--logo-color-black);
 }
+
 
 
 

@@ -10,12 +10,12 @@
 }
 
 .project-grid__item {
-  // font-size: 0px;
+  font-size: 0px;
   width: 450px;
 
 @media screen and (min-width: $tablet) {
-width: calc((100% - 30px) 2);
-width: 354px;
+  width: calc((100% - 30px) 2);
+  width: 354px;
 
   &:nth-child(2n+1) {
   margin-right: 30px;
@@ -43,6 +43,7 @@ width: 354px;
 .project-grid__link {
   display: block;
   font-style: normal;
+
   color: var(--main-txt-color);
   text-decoration: none;
   transition: box-shadow var(--transmition-timing) var(--transmition-function);
@@ -54,36 +55,41 @@ width: 354px;
 }
 
 .project-grid__wrapper {
+  font-size: 0;
   display: block;
   position: relative;
   overflow: hidden;
 }
 
 .project-grid__card {
-// width: 450px;
-
+  width: 450px;
 @media screen and (min-width: $tablet) {
-  // width: 354px;
+  width: 354px;
 }
 @media screen and (min-width: $desktop) {
-  // width: 370px;
+  width: 370px;
 }
 }
 
 .project-grid__detals {
   padding: 20px 24px;
-  // width: 450px;
+  width: 450px;
+
   border-left: 1px solid var(--bg-frame-color);
   border-right: 1px solid var(--bg-frame-color);
   border-bottom: 1px solid var(--bg-frame-color);
 
 
 @media screen and (min-width: $tablet) {
-// width: 354px;
-margin-right: 0;
+  width: 354px;
+  margin-right: 0;
+
+  & {
+  flex-grow: 1;
+  }
 }
 @media screen and (min-width: $desktop) {
-// width: 370px;
+  width: 370px;
 }
 
 }
