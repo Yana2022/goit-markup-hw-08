@@ -76,17 +76,20 @@
   border-right: 1px solid var(--bg-frame-color);
   border-bottom: 1px solid var(--bg-frame-color);
 
-&:first-child {
-  align-items: center;
-}
-@media screen and (min-width: $tablet) {
+// &:first-child {
+//   align-items: center;
+// }
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
   width: 354px;
-  margin-right: 0;
-
+  // margin-right: 0;
+  // height: auto;
+//   flex-grow: 1;
+// margin: auto 0;
+}
 // .project-grid__detals:first-child {
 //   padding-bottom: 56px;
 //   }
-}
+
 @media screen and (min-width: $desktop) {
   width: 370px;
 }

@@ -3,11 +3,12 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: start;
   gap: 15px 8px;
   margin-bottom: 30px;
 
+
 @media screen and (min-width: $mobile) {
-  justify-content: start;
   margin-bottom: 40px;
 }
 
