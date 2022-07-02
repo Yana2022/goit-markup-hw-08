@@ -59,6 +59,7 @@ a {
 }
 
 body {
+  width: 100%;
   overflow-y: scroll;
   font-family: var(--main-font);
   background-color: var(--main-white-color);
@@ -389,6 +390,12 @@ body.modal-open {
   background-position: center;
   background-size: cover;
   background-color: var(--bg-second-color);
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .hero {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1075,14 +1082,31 @@ body.modal-open {
 
 /* Panel-btn */
 .panel-btn--disposition {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+  margin-bottom: 30px;
 }
 
-.panel-btn__item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 480px) {
+  .panel-btn--disposition {
+    justify-content: start;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .panel-btn--disposition {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .panel-btn--disposition {
+    margin-bottom: 50px;
+  }
 }
 
 .panel-btn__button {
@@ -1102,7 +1126,6 @@ body.modal-open {
   color: var(--secondary-txt-color);
   cursor: pointer;
   padding: 6px 22px;
-  min-width: 73px;
   transition: color var(--transmition-timing) var(--transmition-function), background-color var(--transmition-timing) var(--transmition-function), box-shadow var(--transmition-timing) var(--transmition-function);
 }
 
@@ -1197,13 +1220,14 @@ body.modal-open {
   border-bottom: 1px solid var(--bg-frame-color);
 }
 
+.project-grid__detals:first-child {
+  align-items: center;
+}
+
 @media screen and (min-width: 768px) {
   .project-grid__detals {
     width: 354px;
     margin-right: 0;
-  }
-  .project-grid__detals {
-    flex-grow: 1;
   }
 }
 

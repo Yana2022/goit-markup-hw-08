@@ -1,6 +1,5 @@
 /* Project */
 .project-grid {
-
 @media screen and (min-width: $tablet) {
   display: flex;
   flex-wrap: wrap;
@@ -8,7 +7,6 @@
  @media screen and (min-width: $desktop) {
 }
 }
-
 .project-grid__item {
   font-size: 0px;
   width: 450px;
@@ -26,7 +24,6 @@
 }
 }
 }
-
 @media screen and (min-width: $desktop) {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
@@ -79,19 +76,20 @@
   border-right: 1px solid var(--bg-frame-color);
   border-bottom: 1px solid var(--bg-frame-color);
 
-
+&:first-child {
+  align-items: center;
+}
 @media screen and (min-width: $tablet) {
   width: 354px;
   margin-right: 0;
 
-  & {
-  flex-grow: 1;
-  }
+// .project-grid__detals:first-child {
+//   padding-bottom: 56px;
+//   }
 }
 @media screen and (min-width: $desktop) {
   width: 370px;
 }
-
 }
 
 .project-grid__title {
