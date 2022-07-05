@@ -1,13 +1,13 @@
-.mobile-menu__contacts {
+.mobile-menu__list {
   margin-bottom: 64px;
 }
 .mobile-menu--accent-color {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  font-size: 34px;
   
   @media screen and (min-width: $mobile) {
-  font-size: 34px;
   line-height: 1.17;
   }
 

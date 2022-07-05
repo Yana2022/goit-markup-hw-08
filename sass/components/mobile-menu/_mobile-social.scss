@@ -1,5 +1,6 @@
 .mobile-social__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobile-social__item:not(:last-child) {

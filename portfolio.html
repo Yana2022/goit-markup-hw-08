@@ -92,8 +92,21 @@
     <li class="project-grid__item">
  <a class="project-grid__link" href="./portfolio.html">
         <div class="project-grid__wrapper">
-            <img clsass="project-grid__card" src="./images/project1-mob-1x.jpg" alt="Фото ноутбука с фотокарточками на дисплее" width="" height="294" />
-        <div class="blue-box blue-box--wrapper">
+
+
+          <picture>
+          <source srcset="./images/project1-deck.jpg 1x,
+          ./images/project1-deck-2x.jpg 2x" media="(min-width: 1200px)"/>
+<source srcset="./images/project1-deck-2x.jpg"/>
+          <source srcset="./images/project1-deck.jpg 1x,
+          ./images/project1-deck-2x.jpg 2x" media="(min-width: 780px)"/>
+
+          <source srcset="./images/project1-mob.jpg 1x,
+          ./images/project1-mob-2x.jpg 2x" media="(min-width: 480px)"/>
+            <img clsass="project-grid__card" src="./images/project1-deck.jpg" alt="Фото ноутбука с фотокарточками на дисплее" width="354px" height="" />
+        </picture>
+
+            <div class="blue-box blue-box--wrapper">
           <p class="blue-box__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
       </div>
       </div>
@@ -292,23 +305,25 @@
 </footer>
 <!-- Mobile-menu -->
 <div class="mobile-overlay" id="mobile-overlay" data-menu>
-
   <div class="mobile-menu">
-    <nav class="mobile-nav">
-      <ul class="mobile-nav__list">
-        <li class="mobile-nav__item">
-          <a class="mobile-nav__link" href="./index.html">Студия</a>
-        </li>
-        <li class="mobile-nav__item">
-          <a class="mobile-nav__link mobile-nav--acent" href="./portfolio.html">Портфолио</a>
-        </li>
-        <li class="mobile-nav__item">
-          <a class="mobile-nav__link" href="./index.html">Контакты</a>
-        </li>
-      </ul>
-    </nav>
 
-    <div class="mobile-menu__contacts">
+    <div class="mobile-menu--top">
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link mobile-nav--acent" href="./index.html">Студия</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="./index.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="mobile-menu--bottom">
       <ul class="mobile-menu__list">
         <li class="mobile-menu__item">
           <a class="mobile-menu__link mobile-menu--accent-color" href="tel:+380961111111">+38 096 111 11 11</a>
@@ -317,9 +332,7 @@
           <a class="mobile-menu__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
       </ul>
-    </div>
 
-    <div class="mobile-social">
       <ul class="mobile-social__list">
         <li class="mobile-social__item">
           <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer"
@@ -342,6 +355,7 @@
         </li>
       </ul>
     </div>
+
 
   </div>
 </div>

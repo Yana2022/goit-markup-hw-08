@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   gap: 30px;
 
-@media screen and (min-width: $tablet) {
+@include tablet {
   flex-direction: row;
 }
 
@@ -13,12 +13,12 @@
   font-size: 0px;
   width: 450px;
 
-@media screen and (min-width: $tablet) {
+@include mobile {
   flex-basis: calc((100% - 30px) 2);
   width: 354px;
 }
 
-@media screen and (min-width: $desktop) {
+@include desktop {
   width: calc((100% - 60px) / 3);
 }
 }
@@ -45,29 +45,34 @@
 }
 
 .project-grid__card {
+width: auto;
+
+@include mobile {
   width: 450px;
-@media screen and (min-width: $tablet) {
+}
+@include tablet {
   width: 354px;
 }
-@media screen and (min-width: $desktop) {
+@include desktop {
   width: 370px;
 }
 }
 
 .project-grid__detals {
   padding: 20px 24px;
-  width: 450px;
-
   border-left: 1px solid var(--bg-frame-color);
   border-right: 1px solid var(--bg-frame-color);
   border-bottom: 1px solid var(--bg-frame-color);
 
-@media screen and (min-width: $tablet) and (max-width: 1199px) {
-  width: 354px;
-  // flex-grow: 1;
+@include mobile {
+  width: 450px;
 }
 
-@media screen and (min-width: $desktop) {
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+  width: 354px;
+}
+
+@include desktop {
   width: 370px;
 }
 }
@@ -79,6 +84,10 @@
   letter-spacing: 0.06em;
   color: var(--secondary-txt-color);
   margin-bottom: 4px;
+
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+  font-size: 17.3px;
+}
 }
 
 .project-grid__text {
