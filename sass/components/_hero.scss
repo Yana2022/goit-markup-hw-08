@@ -54,7 +54,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop) {
+  @include desktop {
   max-width: 1600px;
   height: 600px;
 

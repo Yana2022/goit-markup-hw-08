@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAE,eAAe,AAAC,CAChC,OAAO,CAAE,KAAK,CACd,WAAW,CAAE,IAAI,CAChB",
+    "sources": [
+        "../sass/components/mobile-menu/_menu-btn-open/close.scss"
+    ],
+    "names": [],
+    "file": "close.min.css"
+}
