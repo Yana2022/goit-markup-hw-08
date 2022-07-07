@@ -3,7 +3,7 @@
   align-items: baseline;
   margin-bottom: 60px;
 
-  @media screen and (min-width: $desktop) {
+@include decktop {
   margin-bottom: 20px;
 }
 
@@ -16,7 +16,7 @@
   text-align: center;
 
 
-  @media screen and (min-width: $desktop) {
+@include decktop {
   text-align: left;
   }
 }

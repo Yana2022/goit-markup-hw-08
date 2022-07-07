@@ -5,11 +5,11 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: $mobile) {
+@include mobile {
   width: 480px;
   }
 
-@media screen and (min-width: $tablet) {
+@include tablet {
   width: 768px;
   &__header {
     display: flex;
@@ -17,7 +17,7 @@
   }
 }
 
-@media screen and (min-width: $desktop) {
+@include decktop {
   width: 1200px;
 }
 }
@@ -27,14 +27,14 @@
   flex-flow: column;
   align-items: center;
 
-@media screen and (min-width: $tablet) {
+@include tablet {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: baseline;
 }
 
-  @media screen and (min-width: $desktop) {
+@include decktop {
   display: flex;
   flex-flow: row;
   align-items: baseline;

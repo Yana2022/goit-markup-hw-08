@@ -9,7 +9,7 @@
   gap: 30px;
 
 }
-  @media screen and (min-width: $mobile) {
+@include mobile {
   display: flex;
   flex-wrap: wrap;
   }
@@ -19,12 +19,11 @@
   height: 92px;
 
 @media screen and (max-width: 479px) {
-  // width: 91vw;
   width: calc((100% - 30px) / 2);
   max-width: 210px;
 }
 
-  @media screen and (min-width: $mobile) and (max-width: 767px) {
+@media screen and (min-width: $mobile) and (max-width: 767px) {
   width: calc((100% - 30px) / 2);
 
   &:not(:nth-child(2n+2)) {
@@ -35,7 +34,7 @@
   }
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
   width: calc((100% - 60px) / 3);
 
   &:not(:nth-last-child(-n+3)) {
@@ -46,7 +45,7 @@
   }
 }
 
-  @media screen and (min-width: $desktop) {
+@include decktop {
   width: calc((100% - 150px) / 6);
 
   &:not(:last-child) {

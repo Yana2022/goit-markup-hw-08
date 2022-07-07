@@ -688,7 +688,7 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .team__item {
     height: 428px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     margin-right: 30px;
   }
   .team__item:last-child {
@@ -1216,6 +1216,7 @@ body.modal-open {
 
 .project-grid__card {
   height: auto;
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
@@ -1307,7 +1308,14 @@ body.modal-open {
   font-size: 16px;
   line-height: 1.55;
   color: var(--main-white-color);
-  padding: 20px 15px;
+  padding: 15px 15px;
+}
+
+@media screen and (min-width: 370px) {
+  .blue-box__text {
+    font-size: 17px;
+    padding: 20px 25px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1480,9 +1488,14 @@ body.modal-open {
 
 .checkbox-agreement__label {
   display: flex;
-  align-items: center;
   justify-content: center;
   transition: fill var(--transmition-timing) var(--transmition-function), background-color var(--transmition-timing) var(--transmition-function);
+}
+
+@media screen and (min-width: 480px) {
+  .checkbox-agreement__label {
+    align-items: center;
+  }
 }
 
 .checkbox-agreement__input {

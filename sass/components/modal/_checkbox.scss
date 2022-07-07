@@ -5,11 +5,14 @@
 
 .checkbox-agreement__label {
   display: flex;
-  align-items: center;
   justify-content: center;
 
   transition: fill var(--transmition-timing) var(--transmition-function),
     background-color var(--transmition-timing) var(--transmition-function);
+
+@include mobile {
+  align-items: center;
+}
 }
 
 .checkbox-agreement__input {
@@ -59,9 +62,8 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-
-
-@media screen and (min-width: $desktop) {
+  
+@include decktop {
   font-size: 14px;
   line-height: 1.71;
 }

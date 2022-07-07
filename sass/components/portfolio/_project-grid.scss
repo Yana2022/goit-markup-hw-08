@@ -23,7 +23,7 @@
   flex-basis: calc((100% - 30px) 2);
 }
 
-@include desktop {
+@include decktop {
   flex-basis: calc((100% - 60px) / 3);
   width: 370px;
 }
@@ -52,6 +52,7 @@
 
 .project-grid__card {
 height: auto;
+width: 100%;
 
 @include mobile {
   width: 450px;
@@ -60,7 +61,7 @@ height: auto;
   height: 294px;
   width: 354px;
 }
-@include desktop {
+@include decktop {
   width: 370px;
 }
 }
@@ -79,7 +80,7 @@ height: auto;
   width: 354px;
 }
 
-@include desktop {
+@include decktop {
   width: 370px;
 }
 }

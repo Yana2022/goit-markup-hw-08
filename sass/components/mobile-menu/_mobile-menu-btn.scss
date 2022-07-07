@@ -15,7 +15,7 @@
   fill: black;
   transition: transform var(--transmition-function --transmition-timing);
 
-  @media screen and (min-width: $tablet) {
+  @include tablet {
     & {
       display: none;
     }

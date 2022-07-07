@@ -6,14 +6,14 @@
   letter-spacing: 0.02em;
   margin-left: 84px;
 
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+  @media screen and (min-width: $tablet) and (max-width: $decktop) {
     display: block;
     &__item:not(:last-child) {
         margin-bottom: 10px;
       }
   }
 
-  @media screen and (min-width: $desktop) {
+  @include decktop {
     display: flex;
     margin-left: auto;
     font-size: 14px;
@@ -34,13 +34,13 @@
   transition: color var(--transmition-timing) var(--transmition-function);
   color: var(--main-txt-color);
 
-  @media screen and (min-width: $tablet) {
+  @include tablet {
     display: flex;
     line-height: 1.14;
     font-style: 14px;
   }
 
-    @media screen and (min-width: $desktop) {
+@include decktop {
     display: flex;
     align-items: center;
     position: relative;
@@ -69,11 +69,11 @@
   margin-right: 8px;
   fill: var(--main-txt-color);
 
-  @media screen and (min-width: $tablet) {
+  @include tablet {
 // display: flex;
 }
 
-  @media screen and (min-width: $desktop) {
+  @include decktop {
   vertical-align: middle;
   margin-right: 10px;
   &--email-width {

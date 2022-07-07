@@ -7,10 +7,9 @@
   color: var(--accent-color);
   font-size: 34px;
   
-  @media screen and (min-width: $mobile) {
+  @include mobile {
   line-height: 1.17;
   }
-
 }
 .mobile-menu__link{
   margin-bottom: 64px;

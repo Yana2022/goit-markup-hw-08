@@ -1,12 +1,12 @@
 /* features */
 .features {
   
-  @media screen and (min-width: $tablet) {
+@include tablet {
     display: flex;
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: $desktop) {
+@include decktop {
     flex-wrap: nowrap;
   }
 }
@@ -18,7 +18,7 @@
     }
   }
 
-  @media screen and (min-width: $tablet) {
+@include tablet {
     height: 251px;
     width: calc((100% - 30px) / 2);
     margin-bottom: 30px;
@@ -32,7 +32,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop) {
+@include decktop {
     width: calc((100% - 90px) / 4);
 
     &:not(:last-child) {
@@ -53,11 +53,11 @@
   background-color: var(--btn-bg-color);
   margin-bottom: 30px;
 
-  @media screen and (min-width: $tablet) {
+@include tablet {
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: $desktop) {
+@include decktop {
     width: 270px;
     margin-bottom: 30px;
   }
@@ -80,7 +80,7 @@
   margin-bottom: 10px;
   text-align: center;
 
-  @media screen and (min-width: $tablet) {
+@include tablet {
     text-align: left;
   }
 }

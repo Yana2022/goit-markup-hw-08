@@ -8,16 +8,14 @@
   margin-bottom: 30px;
 
 
-@media screen and (min-width: $mobile) {
+@include mobile {
   margin-bottom: 40px;
 }
-
-@media screen and (min-width: $tablet) {
+@include tablet {
   justify-content: center;
   margin-bottom: 30px;
 }
-
-@media screen and (min-width: $desktop) {
+@include decktop {
   margin-bottom: 50px;
 }
 }

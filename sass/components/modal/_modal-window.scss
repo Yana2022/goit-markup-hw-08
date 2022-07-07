@@ -14,13 +14,10 @@
   z-index: 20000;
   // overflow-y: scroll;
 
-
-
   background-color: rgba(0, 0, 0, 0.5);
   transition: opacity var(--transmition-timing) var(--transmition-function),
     visibility var(--transmition-timing) var(--transmition-function);
 }
-
 .modal--wrapper {
   position: absolute;
   top: 50%;
@@ -34,11 +31,10 @@
   transition: transform var(--transmition-timing) var(--transmition-function),
     opacity var(--transmition-timing) var(--transmition-function);
 
-@media screen and (min-width: $mobile) {
+@include mobile {
   width: 450px;
 }
-
-@media screen and (min-width: $desktop) {
+@include decktop {
   width: 528px;
 }
 }
@@ -59,7 +55,7 @@
 
   margin-bottom: 12px;
 
-@media screen and (min-width: $desktop) {
+@include decktop {
   line-height: 1.15;
 }
 }
@@ -109,7 +105,6 @@
   transition: border var(--transmition-timing) var(--transmition-function);
 }
 
-
 .form__icon {
   position: absolute;
   bottom: 11px;
@@ -128,7 +123,6 @@
     fill: var(--accent-color);
   }
 }
-
 
 .form__comment {
   resize: none;

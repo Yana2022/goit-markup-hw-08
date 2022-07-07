@@ -1,18 +1,16 @@
 /* Footer section */
-
 .footer {
   width: 100%;
   background-color: var(--secondary-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.contacts-wrapper--disposition {
 
-  @media screen and (min-width: $desktop) {
+.contacts-wrapper--disposition {
+@include decktop {
   flex-grow: 1;
   margin-right: 70px;
   }
-
 }
 
 .footer__logo {
@@ -27,7 +25,7 @@
   text-align: center;
   margin-bottom: 20px;
 
-  @media screen and (min-width: $desktop) {
+@include decktop {
   font-size: 26px;
   line-height: 1.19;
   text-align: left;
@@ -43,22 +41,22 @@
   margin-bottom: 60px;
   text-align: center;
 
-  @media screen and (min-width: $desktop) {
+@include decktop {
   text-align: left;
   }
 }
+
 .contacts-list__item {
   &:not(:last-child) {
   margin-bottom: 8px;
 }
 
-  @media screen and (min-width: $desktop) {
+@include decktop {
   &:not(:last-child) {
   margin-bottom: 9px;
 }
 }
 }
-
 
 .contacts-list__link,
 .contacts-list__link--map {

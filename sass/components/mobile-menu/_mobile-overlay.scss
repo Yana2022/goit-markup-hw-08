@@ -15,10 +15,10 @@
   background-color: var(--main-white-color);
 
 
-  @media screen and (min-width: $mobile) {
+  @include mobile {
   padding: 48px 40px;
   }
-  @media screen and (min-width: $tablet) {
+  @include tablet {
   display: none;
   }
 
