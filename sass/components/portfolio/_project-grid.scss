@@ -1,6 +1,5 @@
 /* Project */
 .project-grid {
-
 @include tablet {
   display: flex;
   flex-wrap: wrap;
@@ -22,7 +21,6 @@
 @include tablet {
   flex-basis: calc((100% - 30px) 2);
 }
-
 @include decktop {
   flex-basis: calc((100% - 60px) / 3);
   width: 370px;
@@ -75,11 +73,9 @@ width: 100%;
 @include mobile {
   width: 450px;
 }
-
 @media screen and (min-width: $tablet) and (max-width: 1199px) {
   width: 354px;
 }
-
 @include decktop {
   width: 370px;
 }

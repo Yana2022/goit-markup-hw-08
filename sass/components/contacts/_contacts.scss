@@ -69,10 +69,6 @@
   margin-right: 8px;
   fill: var(--main-txt-color);
 
-  @include tablet {
-// display: flex;
-}
-
   @include decktop {
   vertical-align: middle;
   margin-right: 10px;
@@ -86,7 +82,6 @@
       height: 16px;
     }
   }
-
 
   .contacts__link:hover &,
   .contacts__link:focus & {
