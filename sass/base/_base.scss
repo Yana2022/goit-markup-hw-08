@@ -2,7 +2,7 @@
 
 body {
   width: 100%;
-  overflow-y: scroll;
+  // overflow-y: scroll;
   font-family: var(--main-font);
   background-color: var(--main-white-color);
   color: var(--main-txt-color);
@@ -10,10 +10,12 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
-body.modal-open {
-  height: 100vh;
-  overflow-y: hidden;
-}
+
+// body.modal-open {
+//   height: 100vh;
+//   overflow-y: hidden;
+// }
+
 .img {
   display: block;
   max-width: 100%;

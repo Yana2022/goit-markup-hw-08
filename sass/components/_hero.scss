@@ -112,15 +112,16 @@
   border-radius: 4px;
   cursor: pointer;
   margin: auto;
-  transition: color var(--transmition-timing) var(--transmition-function);
+  transition: color var(--transmition-timing) var(--transmition-function),
+  background-color var(--transmition-timing) var(--transmition-function);
 
 @include mobile {
   min-width: 200px;
   max-width: 300px;
   min-height: 50px;
+}
 &:hover,
 &:focus {
   background-color: var(--btn-color-hover);
-}
 }
 }
