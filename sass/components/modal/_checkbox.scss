@@ -28,9 +28,11 @@
   background-color: var(--accent-color);
   border-radius: 2px;
 }
-
 }
 
+&:focus+.checkbox-agreement__icon .checkbox-agreement__svg {
+border-color: var(--accent-color);
+}
 .checkbox-agreement__icon {
   width: 16px;
   height: 15px;
