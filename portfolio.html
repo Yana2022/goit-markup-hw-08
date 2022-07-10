@@ -92,7 +92,7 @@
     <li class="project-grid__item">
  <a class="project-grid__link" href="./portfolio.html">
         <div class="project-grid__wrapper">
-          <img
+          <!-- <img
           class="project-grid__card"
           srcset="./images/project1-deck.jpg 270w,
           ./images/project1-tab.jpg 354w,
@@ -103,10 +103,29 @@
           src="./images/project1-mob.jpg"
           alt="Фото ноутбука с фотокарточками на дисплее"
           loading="lazy"
-          sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"/>
+          sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"/> -->
+          <picture class="project-grid__card">
+              <source srcset="./images/project1-deck.jpg 1x,
+                  ./images/project1-deck-2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+        
+                  <source srcset="./images/project1-deck.jpg 1x,
+                  ./images/project1-deck-2x.jpg 2x"
+                  media="(min-width: 780px)"/>
+        
+                  <source srcset="./images/project1-mob.jpg 1x,
+                  ./images/project1-mob-2x.jpeg 2x"
+                  media="(min-width: 480px)"
+                  
+                  alt="Фото ноутбука с фотокарточками на дисплее"
+                  src="./images/project1-mob.jpg" width="370" hight="290"
+                  />
+          </picture>
 
             <div class="blue-box blue-box--wrapper">
-          <p class="blue-box__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+          <p class="blue-box__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+          исчерпывающие сведения о компании или частном лице.Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+          исчерпывающие сведения о компании или частном лице.Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
       </div>
       </div>
           <div class="project-grid__detals">

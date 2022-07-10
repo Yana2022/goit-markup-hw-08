@@ -7,6 +7,13 @@
 }
 
 .contacts-wrapper--disposition {
+@media screen and (min-width: 300px) and (max-width: 1199.99px) {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: $tablet) and (max-width: 1199.99px) {
+margin-right: 165px;
+}
+
 @include decktop {
   flex-grow: 1;
   margin-right: 70px;
@@ -38,7 +45,6 @@
 }
 
 .contacts-list {
-  margin-bottom: 60px;
   text-align: center;
 
 @include decktop {

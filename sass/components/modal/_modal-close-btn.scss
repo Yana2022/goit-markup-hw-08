@@ -21,6 +21,12 @@
 &:focus .modal-close__icon {
   fill: var(--accent-color);
 }
+&:focus {
+  outline: 2px solid rgb(22, 49, 182);
+}
+&:hover {
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+}
 }
 
 .modal-close__icon {

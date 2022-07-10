@@ -1,36 +1,31 @@
 /* Project */
 .project-grid {
+
 @include tablet {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px 30px;
-  flex-direction: row;
+  gap: 30px;
+}
 }
 
-}
 .project-grid__item {
-@media screen and (max-width: 768px) {
-  font-size: 0px;
-  width: 100%;
+max-width: 450px;
 
+@media screen and (max-width: 768px) {
   &:not(:last-child) {
   margin-bottom: 30px;
 }
 }
 
 @include tablet {
-  flex-basis: calc((100% - 30px) 2);
+  width: calc((100% - 30px)/2);
 }
 @include decktop {
-  flex-basis: calc((100% - 60px) / 3);
-  width: 370px;
+  flex-basis: calc((100% - 60px)/3);
 }
 }
 
 .project-grid__link {
-  display: block;
-  font-style: normal;
-
   color: var(--main-txt-color);
   text-decoration: none;
   transition: box-shadow var(--transmition-timing) var(--transmition-function);
@@ -39,6 +34,14 @@
   &:focus {
     box-shadow: var(--box-shadow-carts);
   }
+
+  @include tablet {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-style: normal;
+  }
+
 }
 
 .project-grid__wrapper {
@@ -52,12 +55,8 @@
 height: auto;
 width: 100%;
 
-@include mobile {
-  width: 450px;
-}
 @include tablet {
   height: 294px;
-  width: 354px;
 }
 @include decktop {
   width: 370px;
@@ -65,16 +64,18 @@ width: 100%;
 }
 
 .project-grid__detals {
+  flex-grow: 1;
+
   padding: 20px 24px;
-  border-left: 1px solid var(--bg-frame-color);
-  border-right: 1px solid var(--bg-frame-color);
-  border-bottom: 1px solid var(--bg-frame-color);
+  border: 1px solid var(--bg-frame-color);
+  border-top-width: 0;
 
 @include mobile {
   width: 450px;
 }
 @media screen and (min-width: $tablet) and (max-width: 1199px) {
-  width: 354px;
+  // width: 354px;
+  width: 100%;
 }
 @include decktop {
   width: 370px;
@@ -88,10 +89,6 @@ width: 100%;
   letter-spacing: 0.06em;
   color: var(--secondary-txt-color);
   margin-bottom: 4px;
-
-@media screen and (min-width: $tablet) and (max-width: 1199px) {
-  font-size: 17.3px;
-}
 }
 
 .project-grid__text {

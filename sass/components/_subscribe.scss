@@ -39,7 +39,10 @@ text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   box-shadow: var(--hero-btn-shadow);
+
+@media screen and (min-width: 300px) and (max-width: 1199.99px) {
   margin-bottom: 20px;
+}
 
   outline: transparent;
   cursor: pointer;

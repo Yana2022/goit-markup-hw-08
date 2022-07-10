@@ -5,6 +5,8 @@
   padding-bottom: 118px;
   padding-top: 118px;
   text-align: center;
+  width: 100%;
+  max-width: 1600px;
 
   background-image: linear-gradient(to bottom,
       var(--bg-color-hero),
@@ -24,7 +26,7 @@
   }
 
   @media screen and (min-width: $mobile) and (max-width: 768px) {
-  width: 480px;
+  // width: 480px;
   background-image: linear-gradient(to bottom,
   var(--bg-color-hero),
   var(--bg-color-hero)),
@@ -39,7 +41,7 @@
   }
 
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
-  width: 768px;
+  // width: 768px;
   background-image: linear-gradient(to bottom,
         var(--bg-color-hero),
         var(--bg-color-hero)),
