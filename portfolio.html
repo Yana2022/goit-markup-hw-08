@@ -18,6 +18,62 @@
 </head>
 
 <body>
+<!-- Mobile-menu -->
+<div class="mobile-overlay" id="mobile-overlay" data-menu>
+  <div class="mobile-menu">
+
+    <div class="mobile-menu--top">
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="./index.html">Студия</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link mobile-nav--acent" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="./index.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="mobile-menu--bottom">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu--accent-color" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-social__list">
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram">Instagram
+          </a>
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter
+          </a>
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer"
+            aria-label="Facebook">Facebook
+          </a>
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer"
+            aria-label="Linkedin">Linkedin
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+</div>
 
   <!-- Header section -->
   <header class="header">
@@ -92,40 +148,25 @@
     <li class="project-grid__item">
  <a class="project-grid__link" href="./portfolio.html">
         <div class="project-grid__wrapper">
-          <!-- <img
-          class="project-grid__card"
-          srcset="./images/project1-deck.jpg 270w,
-          ./images/project1-tab.jpg 354w,
-          ./images/project1-mob.jpg 450w,
-          ./images/project1-deck-2x.jpg 540w,
-          ./images/project1-tab-2x.jpg 708w,
-          ./images/project1-mob-2x.jpg 900w"
-          src="./images/project1-mob.jpg"
-          alt="Фото ноутбука с фотокарточками на дисплее"
-          loading="lazy"
-          sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"/> -->
-          <picture class="project-grid__card">
+           <picture>
               <source srcset="./images/project1-deck.jpg 1x,
                   ./images/project1-deck-2x.jpg 2x"
                   media="(min-width: 1200px)"/>
         
-                  <source srcset="./images/project1-deck.jpg 1x,
-                  ./images/project1-deck-2x.jpg 2x"
-                  media="(min-width: 780px)"/>
+                  <source srcset="./images/project1-tab.jpg 1x,
+                  ./images/project1-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"/>
         
                   <source srcset="./images/project1-mob.jpg 1x,
-                  ./images/project1-mob-2x.jpeg 2x"
-                  media="(min-width: 480px)"
-                  
-                  alt="Фото ноутбука с фотокарточками на дисплее"
-                  src="./images/project1-mob.jpg" width="370" hight="290"
-                  />
+                  ./images/project1-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"/>
+                <img class="project-grid__card" src="./images/project1-mob.jpg" hight="290px"
+                 alt="Фото ноутбука с фотокарточками на дисплее"/>
           </picture>
 
             <div class="blue-box blue-box--wrapper">
           <p class="blue-box__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-          исчерпывающие сведения о компании или частном лице.Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-          исчерпывающие сведения о компании или частном лице.Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+          исчерпывающие сведения о компании или частном лице.</p>
       </div>
       </div>
           <div class="project-grid__detals">
@@ -137,19 +178,21 @@
     <li class="project-grid__item">
 <a class="project-grid__link" href="./portfolio.html">
         <div class="project-grid__wrapper">
-        <img
-          class="project-grid__card"
-          srcset="./images/project2-deck.jpg 270w,
-          ./images/project2-tab.jpg 354w,
-          ./images/project2-mob.jpg 450w,
-          ./images/project2-deck-2x.jpg 540w,
-          ./images/project2-tab-2x.jpg 708w,
-          ./images/project2-mob-2x.jpg 900w"
-          src="./images/project2-mob.jpg"
-          alt="Фото баскетболистов с мячом"
-          loading="lazy"
-          sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"/>
-
+            <picture>
+              <source srcset="./images/project2-deck.jpg 1x,
+                  ./images/project2-deck-2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+        
+                  <source srcset="./images/project2-tab.jpg 1x,
+                  ./images/project2-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"/>
+        
+                  <source srcset="./images/project2-mob.jpg 1x,
+                  ./images/project2-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"/>
+                <img class="project-grid__card" src="./images/project2-mob.jpg" hight="290px"
+                 alt="Фото баскетболистов с мячом"/>
+          </picture>
         <div class="blue-box blue-box--wrapper">
             <p class="blue-box__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
         </div>
@@ -163,19 +206,21 @@
     <li class="project-grid__item">
  <a class="project-grid__link" href="./portfolio.html">
         <div class="project-grid__wrapper">
-        <img
-          class="project-grid__card"
-          srcset="./images/project3-deck.jpg 270w,
-          ./images/project3-tab.jpg 354w,
-          ./images/project3-mob.jpg 450w,
-          ./images/project3-deck-2x.jpg 540w,
-          ./images/project3-tab-2x.jpg 708w,
-          ./images/project3-mob-2x.jpg 900w"
-          src="./images/project3-mob.jpg"
-          alt="Логотип ресторана"
-          loading="lazy"
-          sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"/>
-
+            <picture>
+              <source srcset="./images/project3-deck.jpg 1x,
+                  ./images/project3-deck-2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+        
+                  <source srcset="./images/project3-tab.jpg 1x,
+                  ./images/project3-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"/>
+        
+                  <source srcset="./images/project3-mob.jpg 1x,
+                  ./images/project3-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"/>
+                <img class="project-grid__card" src="./images/project3-mob.jpg" hight="290px"
+                 alt="Логотип ресторана"/>
+          </picture>
         <div class="blue-box blue-box--wrapper">
               <p class="blue-box__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
         </div>
@@ -189,19 +234,21 @@
     <li class="project-grid__item">
 <a class="project-grid__link" href="./portfolio.html">
         <div class="project-grid__wrapper">
-        <img
-          class="project-grid__card"
-          srcset="./images/project4-deck.jpg 270w,
-          ./images/project4-tab.jpg 354w,
-          ./images/project4-mob.jpg 450w,
-          ./images/project4-deck-2x.jpg 540w,
-          ./images/project4-tab-2x.jpg 708w,
-          ./images/project4-mob-2x.jpg 900w"
-          src="./images/project4-mob.jpg"
-          alt="Черные наушники"
-          loading="lazy"
-          sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"/>
-
+          <picture>
+              <source srcset="./images/project4-deck.jpg 1x,
+                  ./images/project4-deck-2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+        
+                  <source srcset="./images/project4-tab.jpg 1x,
+                  ./images/project4-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"/>
+        
+                  <source srcset="./images/project4-mob.jpg 1x,
+                  ./images/project4-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"/>
+                <img class="project-grid__card" src="./images/project4-mob.jpg" hight="290px"
+                 alt="Черные наушники"/>
+          </picture>
         <div class="blue-box blue-box--wrapper">
             <p class="blue-box__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
         </div>
@@ -215,19 +262,21 @@
     <li class="project-grid__item">
 <a class="project-grid__link" href="./portfolio.html">
         <div class="project-grid__wrapper">
-        <img
-          class="project-grid__card"
-          srcset="./images/project5-deck.jpg 270w,
-          ./images/project5-tab.jpg 354w,
-          ./images/project-mob.jpg 450w,
-          ./images/project5-deck-2x.jpg 540w,
-          ./images/project5-tab-2x.jpg 708w,
-          ./images/project5-mob-2x.jpg 900w"
-          src="./images/project5-mob.jpg"
-          alt="Две коробки"
-          loading="lazy"
-          sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"/>
-
+          <picture>
+              <source srcset="./images/project5-deck.jpg 1x,
+                  ./images/project5-deck-2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+        
+                  <source srcset="./images/project5-tab.jpg 1x,
+                  ./images/project5-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"/>
+        
+                  <source srcset="./images/project5-mob.jpg 1x,
+                  ./images/project5-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"/>
+                <img class="project-grid__card" src="./images/project5-mob.jpg" hight="290px"
+                 alt="Две коробки"/>
+          </picture>
         <div class="blue-box blue-box--wrapper">
             <p class="blue-box__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
         </div>
@@ -241,19 +290,21 @@
     <li class="project-grid__item">
 <a class="project-grid__link" href="./portfolio.html">
           <div class="project-grid__wrapper">
-          <img
-          class="project-grid__card"
-          srcset="./images/project6-deck.jpg 270w,
-          ./images/project6-tab.jpg 354w,
-          ./images/project6-mob.jpg 450w,
-          ./images/project6-deck-2x.jpg 540w,
-          ./images/project6-tab-2x.jpg 708w,
-          ./images/project6-mob-2x.jpg 900w"
-          src="./images/project6-mob.jpg"
-          alt="Монитор компьютора"
-          loading="lazy"
-          sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"/>
-
+        <picture>
+              <source srcset="./images/project6-deck.jpg 1x,
+                  ./images/project6-deck-2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+        
+                  <source srcset="./images/project6-tab.jpg 1x,
+                  ./images/project6-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"/>
+        
+                  <source srcset="./images/project6-mob.jpg 1x,
+                  ./images/project6-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"/>
+                <img class="project-grid__card" src="./images/project6-mob.jpg" hight="290px"
+                 alt="Монитор компьютора"/>
+          </picture>
           <div class="blue-box blue-box--wrapper">
             <p class="blue-box__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
           </div>
@@ -267,19 +318,21 @@
     <li class="project-grid__item">
 <a class="project-grid__link" href="./portfolio.html">
           <div class="project-grid__wrapper">
-          <img
-          class="project-grid__card"
-          srcset="./images/project7-deck.jpg 270w,
-          ./images/project7-tab.jpg 354w,
-          ./images/project7-mob.jpg 450w,
-          ./images/project7-deck-2x.jpg 540w,
-          ./images/project7-tab-2x.jpg 708w,
-          ./images/project7-mob-2x.jpg 900w"
-          src="./images/project7-mob.jpg"
-          alt="Открытый журнал"
-          loading="lazy"
-          sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"/>
-
+            <picture>
+              <source srcset="./images/project7-deck.jpg 1x,
+                  ./images/project7-deck-2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+        
+                  <source srcset="./images/project7-tab.jpg 1x,
+                  ./images/project7-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"/>
+        
+                  <source srcset="./images/project7-mob.jpg 1x,
+                  ./images/project7-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"/>
+                <img class="project-grid__card" src="./images/project7-mob.jpg" hight="290px"
+                 alt="Открытый журнал"/>
+          </picture>
           <div class="blue-box blue-box--wrapper">
               <p class="blue-box__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
           </div>
@@ -293,19 +346,21 @@
     <li class="project-grid__item">
 <a class="project-grid__link" href="./portfolio.html">
           <div class="project-grid__wrapper">
-          <img
-          class="project-grid__card"
-          srcset="./images/project8-deck.jpg 270w,
-          ./images/project8-tab.jpg 354w,
-          ./images/project8-mob.jpg 450w,
-          ./images/project8-deck-2x.jpg 540w,
-          ./images/project8-tab-2x.jpg 708w,
-          ./images/project8-mob-2x.jpg 900w"
-          src="./images/project8-mob.jpg"
-          alt="Бирка на веревке"
-          loading="lazy"
-          sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"/>
-
+            <picture>
+              <source srcset="./images/project8-deck.jpg 1x,
+                  ./images/project8-deck-2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+        
+                  <source srcset="./images/project8-tab.jpg 1x,
+                  ./images/project8-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"/>
+        
+                  <source srcset="./images/project8-mob.jpg 1x,
+                  ./images/project8-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"/>
+                <img class="project-grid__card" src="./images/project8-mob.jpg" hight="290"
+                 alt="Бирка на веревке"/>
+          </picture>
           <div class="blue-box blue-box--wrapper">
               <p class="blue-box__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
           </div>
@@ -319,19 +374,21 @@
     <li class="project-grid__item">
 <a class="project-grid__link" href="./portfolio.html">
           <div class="project-grid__wrapper">
-          <img
-          class="project-grid__card"
-          srcset="./images/project9-deck.jpg 270w,
-          ./images/project9-tab.jpg 354w,
-          ./images/project9-mob.jpg 450w,
-          ./images/project9-deck-2x.jpg 540w,
-          ./images/project9-tab-2x.jpg 708w,
-          ./images/project9-mob-2x.jpg 900w"
-          src="./images/project9-mob.jpg"
-          alt="Руки на клавиатуре ноутбука"
-          loading="lazy"
-          sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"/>
-
+            <picture>
+              <source srcset="./images/project9-deck.jpg 1x,
+                  ./images/project9-deck-2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+        
+                  <source srcset="./images/project9-tab.jpg 1x,
+                  ./images/project9-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"/>
+        
+                  <source srcset="./images/project9-mob.jpg 1x,
+                  ./images/project9-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"/>
+                <img class="project-grid__card" src="./images/project9-mob.jpg" hight="290"
+                 alt="Руки на клавиатуре ноутбука"/>
+          </picture>
           <div class="blue-box blue-box--wrapper">
               <p class="blue-box__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
           </div>
@@ -417,62 +474,6 @@
     </form>
   </div>
 </footer>
-<!-- Mobile-menu -->
-<div class="mobile-overlay" id="mobile-overlay" data-menu>
-  <div class="mobile-menu">
-
-    <div class="mobile-menu--top">
-      <nav class="mobile-nav">
-        <ul class="mobile-nav__list">
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link" href="./index.html">Студия</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link mobile-nav--acent" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link" href="./index.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="mobile-menu--bottom">
-      <ul class="mobile-menu__list">
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link mobile-menu--accent-color" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-      </ul>
-
-      <ul class="mobile-social__list">
-        <li class="mobile-social__item">
-          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer"
-            aria-label="Instagram">Instagram
-          </a>
-        </li>
-        <li class="mobile-social__item">
-          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter
-          </a>
-        </li>
-        <li class="mobile-social__item">
-          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer"
-            aria-label="Facebook">Facebook
-          </a>
-        </li>
-        <li class="mobile-social__item">
-          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer"
-            aria-label="Linkedin">Linkedin
-          </a>
-        </li>
-      </ul>
-    </div>
-
-
-  </div>
-</div>
 
 <script src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>

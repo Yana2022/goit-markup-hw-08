@@ -18,6 +18,62 @@
 </head>
 
 <body>
+<!-- Mobile-menu -->
+<div class="mobile-overlay" id="mobile-overlay" data-menu>
+  <div class="mobile-menu">
+
+    <div class="mobile-menu--top">
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link mobile-nav--acent" href="./index.html">Студия</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="./index.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="mobile-menu--bottom">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu--accent-color" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-social__list">
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram">Instagram
+          </a>
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter
+          </a>
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer"
+            aria-label="Facebook">Facebook
+          </a>
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer"
+            aria-label="Linkedin">Linkedin
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+</div>
   <!-- Header section -->
   <header class="header">
   <div class="container container__header">
@@ -69,74 +125,6 @@
       <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
     </div>
     </section>
-    <!-- Modal section -->
-    <div class="backdrop backdrop--disposition is-hidden" data-modal>
-      <div class="modal modal--wrapper">
-        <form class="form form--disposition" autocomplete="off">
-    
-          <!-- Close btn -->
-          <button class="modal-close modal-close--disposition" type="submit" data-modal-close>
-            <svg class="modal-close__icon" width="11" height="11">
-              <use href="./images/icons.svg/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-          <b class="form__title">Оставьте свои данные, мы вам перезвоним</b>
-    
-          <div class="form__field">
-            <label class="form__label" for="username">
-              <span class="form__text">Имя</span>
-              <input class="form__input" type="text" name="username" id="username" />
-              <svg class="form__icon" width="18" height="18">
-                <use href="./images/icons.svg/sprite.svg#icon-person"></use>
-              </svg>
-            </label>
-          </div>
-    
-          <div class="form__field">
-            <label class="form__label" for="phone">
-              <span class="form__text">Телефон</span>
-              <input class="form__input" type="tel" name="phone" id="phone" />
-              <svg class="form__icon" width="18" height="18">
-                <use href="./images/icons.svg/sprite.svg#icon-phone-black"></use>
-              </svg>
-            </label>
-          </div>
-    
-          <div class="form__field">
-            <label class="form__label" for="email">
-              <span class="form__text">Почта</span>
-              <input class="form__input" type="email" name="email" id="email" />
-              <svg class="form__icon" width="18" height="18">
-                <use href="./images/icons.svg/sprite.svg#icon-email-black"></use>
-              </svg>
-            </label>
-          </div>
-    
-          <div class="form__field form__field--mb">
-            <label class="form__label" for="comment">
-              <span class="form__text">Комментарий</span>
-              <textarea class="form__comment" name="comment" id="comment" rows="7" placeholder="Введите текст"></textarea>
-            </label>
-          </div>
-    
-          <!-- Checkbox -->
-          <div class="checkbox-agreement checkbox-agreement--disposition">
-            <label class="checkbox-agreement__label" for="agreement">
-              <input class="checkbox-agreement__input" type="checkbox" name="agreement" id="agreement" required />
-              <span class="checkbox-agreement__icon">
-                <svg class="checkbox-agreement__svg" width="16" height="15">
-                  <use href="./images/icons.svg/sprite.svg#icon-check"></use>
-                </svg>
-              </span>
-              <span class="checkbox-agreement__text">Соглашаюсь с рассылкой и принимаю
-                <a class="checkbox-agreement__link" href="" target="_blank" rel="noopener noreferrer">Условия договора</a>
-              </span>
-            </label>
-          </div>
-          <button class="checkbox-agreement__btn" type="submit">Отправить</button>
-        </form>
-      </div>
-    </div>
 
 <!-- features -->
      <section class="section">
@@ -575,63 +563,74 @@
     </form>
 </div>
   </footer>
-
-<!-- Mobile-menu -->
-<div class="mobile-overlay" id="mobile-overlay" data-menu>
-  <div class="mobile-menu">
-
-    <div class="mobile-menu--top">
-      <nav class="mobile-nav">
-        <ul class="mobile-nav__list">
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link mobile-nav--acent" href="./index.html">Студия</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link" href="./index.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="mobile-menu--bottom">
-      <ul class="mobile-menu__list">
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link mobile-menu--accent-color" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-      </ul>
-
-      <ul class="mobile-social__list">
-        <li class="mobile-social__item">
-          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer"
-            aria-label="Instagram">Instagram
-          </a>
-        </li>
-        <li class="mobile-social__item">
-          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter
-          </a>
-        </li>
-        <li class="mobile-social__item">
-          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer"
-            aria-label="Facebook">Facebook
-          </a>
-        </li>
-        <li class="mobile-social__item">
-          <a class="mobile-social__link" href="" target="_blank" rel="noopener noreferrer"
-            aria-label="Linkedin">Linkedin
-          </a>
-        </li>
-      </ul>
-    </div>
-
-
-  </div>
-</div>
+      <!-- Modal section -->
+      <div class="backdrop backdrop--disposition is-hidden" data-modal>
+        <div class="modal modal--wrapper">
+          <form class="form form--disposition" autocomplete="off">
+      
+            <!-- Close btn -->
+            <button class="modal-close modal-close--disposition" type="submit" data-modal-close>
+              <svg class="modal-close__icon" width="11" height="11">
+                <use href="./images/icons.svg/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <b class="form__title">Оставьте свои данные, мы вам перезвоним</b>
+      
+            <div class="form__field">
+              <label class="form__label" for="username">
+                <span class="form__text">Имя</span>
+                <input class="form__input" type="text" name="username" id="username" />
+                <svg class="form__icon" width="18" height="18">
+                  <use href="./images/icons.svg/sprite.svg#icon-person"></use>
+                </svg>
+              </label>
+            </div>
+      
+            <div class="form__field">
+              <label class="form__label" for="phone">
+                <span class="form__text">Телефон</span>
+                <input class="form__input" type="tel" name="phone" id="phone" />
+                <svg class="form__icon" width="18" height="18">
+                  <use href="./images/icons.svg/sprite.svg#icon-phone-black"></use>
+                </svg>
+              </label>
+            </div>
+      
+            <div class="form__field">
+              <label class="form__label" for="email">
+                <span class="form__text">Почта</span>
+                <input class="form__input" type="email" name="email" id="email" />
+                <svg class="form__icon" width="18" height="18">
+                  <use href="./images/icons.svg/sprite.svg#icon-email-black"></use>
+                </svg>
+              </label>
+            </div>
+      
+            <div class="form__field form__field--mb">
+              <label class="form__label" for="comment">
+                <span class="form__text">Комментарий</span>
+                <textarea class="form__comment" name="comment" id="comment" rows="7" placeholder="Введите текст"></textarea>
+              </label>
+            </div>
+      
+            <!-- Checkbox -->
+            <div class="checkbox-agreement checkbox-agreement--disposition">
+              <label class="checkbox-agreement__label" for="agreement">
+                <input class="checkbox-agreement__input" type="checkbox" name="agreement" id="agreement" required />
+                <span class="checkbox-agreement__icon">
+                  <svg class="checkbox-agreement__svg" width="16" height="15">
+                    <use href="./images/icons.svg/sprite.svg#icon-check"></use>
+                  </svg>
+                </span>
+                <span class="checkbox-agreement__text">Соглашаюсь с рассылкой и принимаю
+                  <a class="checkbox-agreement__link" href="" target="_blank" rel="noopener noreferrer">Условия договора</a>
+                </span>
+              </label>
+            </div>
+            <button class="checkbox-agreement__btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
 
 <script src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>

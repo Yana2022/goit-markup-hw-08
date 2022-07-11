@@ -1,0 +1,36 @@
+.checkbox-agreement__btn {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  margin: auto;
+  min-width: 200px;
+  max-width: 300px;
+  min-height: 50px;
+
+  padding: 10px 55px;
+
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: background-color var(--transmition-timing) var(--transmition-function),
+    box-shadow var(--transmition-timing) var(--transmition-function);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15),
+      0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--btn-color-hover);
+  }
+}
