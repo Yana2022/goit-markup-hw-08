@@ -1,7 +1,11 @@
 /* Networks */
 .networks {
   align-items: baseline;
+
+  @media screen and (max-width: $tablet){
   margin-bottom: 60px;
+  }
+
 
 
   &__title {

@@ -11,25 +11,32 @@
   background-color: transparent;
   outline: transparent;
   margin-left: auto;
+
   fill: black;
   cursor: pointer;
 
-  & .menu-btn__icon-close,
-  & .menu-btn__icon-open {
+@media screen and (min-width: $tablet) {
+& {
+    display: none;
+}
+}
+
+& .menu-btn__icon-close,
+& .menu-btn__icon-open {
   transition: fill var(--transmition-function) var(--transmition-timing);
 }
 
-&.is-active {
-      position: fixed;
-      top: 10px;
-      right: 15px;
+&:focus .menu-btn__icon {
+outline: 2px solid rgb(22, 49, 182);
+border-radius: 2px;
 }
 
-@include tablet {
-    & {
-      display: none;
-    }
-  }
+&.is-active {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  outline: none;
+}
 }
 
 .menu-btn__icon {
