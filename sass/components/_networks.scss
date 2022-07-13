@@ -5,8 +5,9 @@
   @media screen and (max-width: $tablet){
   margin-bottom: 60px;
   }
-
-
+  @include decktop {
+  margin-right: 93px;
+  }
 
   &__title {
   font-size: 14px;
@@ -15,7 +16,6 @@
   margin-bottom: 20px;
   padding-bottom: 0px;
   text-align: center;
-
 
 @include decktop {
   margin-bottom: 20px;

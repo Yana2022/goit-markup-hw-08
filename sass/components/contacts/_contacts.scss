@@ -8,8 +8,6 @@
 
   @media screen and (min-width: $tablet) and (max-width: 1199.98px) {
     display: block;
-    padding-top: 21px;
-    padding-bottom: 21px;
 
     &__item:not(:last-child) {
         margin-bottom: 10px;
@@ -37,10 +35,17 @@
   transition: color var(--transmition-timing) var(--transmition-function);
   color: var(--main-txt-color);
 
-  @include tablet {
+  @media screen and (min-width: $tablet) and (max-width: 1199.98px) {
     display: flex;
     line-height: 1.14;
     font-style: 14px;
+
+  &--email {
+    padding-top: 21px;
+    }
+  &--phone {
+    padding-bottom: 21px;
+    }
   }
 
 @include decktop {

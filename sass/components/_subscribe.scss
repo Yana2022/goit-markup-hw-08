@@ -8,7 +8,6 @@ text-align: center;
   align-items: center;
 }
 @include decktop {
-  margin-left: 93px;
   align-items: baseline;
 }
 
@@ -39,19 +38,21 @@ text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   box-shadow: var(--hero-btn-shadow);
-
+  outline: transparent;
+  cursor: pointer;
+  transition: border-color var(--transmition-function) var(--transmition-timing);
+  
+  &:hover,
+  &:focus {
+  border-color: var(--accent-color);
+}
 @media screen and (min-width: 300px) and (max-width: 1199.99px) {
   margin-bottom: 20px;
 }
-
-  outline: transparent;
-  cursor: pointer;
-
 @include decktop {
   margin-right: 12px;
   width: 358px;
 }
-
 }
 .subscribe-btn {
   font-weight: 700;

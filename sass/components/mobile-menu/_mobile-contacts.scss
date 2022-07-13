@@ -11,8 +11,14 @@
   line-height: 1.17;
   }
 }
-.mobile-menu__link{
+.mobile-menu__link {
   margin-bottom: 64px;
+  transition: color var(--transmition-function) var(--transmition-timing);
+
+&:hover,
+&:focus {
+  color: var(--accent-color);
+}
 }
 .mobile-menu__item {
   font-weight: 500;

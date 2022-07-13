@@ -7,8 +7,6 @@
   z-index: 10;
   overflow-y: scroll;
 
-  padding: 48px 20px;
-
   transform: translateX(100%);
   transition: transform var(--transmition-timing) var(--transmition-function),
   visibility var(--transmition-timing) var(--transmition-function);
@@ -16,9 +14,6 @@
   pointer-events: none;
   background-color: var(--main-white-color);
 
-@include mobile {
-  padding: 48px 40px;
-}
 @include tablet {
   display: none;
 }
@@ -40,4 +35,11 @@
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
+
+@media screen and (max-width: 479.98px) {
+  padding: 48px 20px;
+  }
+@include mobile {
+  padding: 48px 40px;
+}
 }
